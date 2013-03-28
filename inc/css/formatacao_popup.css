@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'DINEngschriftStdRegular';
+    src: url('../../fontes/DINEngschriftStd/dinengschriftstd-webfont.eot');
+    src: url('../../fontes/DINEngschriftStd/dinengschriftstd-webfont.eot?#iefix') format('embedded-opentype'),
+        
+         url('../../fontes/DINEngschriftStd/dinengschriftstd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINMittelschriftStdRegular';
+    src: url('../../fontes/DINMittelschriftStd/dinmittelschriftstd-webfont.eot');
+    src: url('../../fontes/DINMittelschriftStd/dinmittelschriftstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fontes/DINMittelschriftStd/dinmittelschriftstd-webfont.woff') format('woff'),
+         url('../../fontes/DINMittelschriftStd/dinmittelschriftstd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNeuzeitGroteskStdLightRg';
+    src: url('../../fontes/DINNeuzeitGroteskStd-Light/dinneuzeitgroteskstd-light-webfont.eot');
+    src: url('../../fontes/DINNeuzeitGroteskStd-Light/dinneuzeitgroteskstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fontes/DINNeuzeitGroteskStd-Light/dinneuzeitgroteskstd-light-webfont.woff') format('woff'),
+         url('../../fontes/DINNeuzeitGroteskStd-Light/dinneuzeitgroteskstd-light-webfont.ttf') format('truetype'),
+         url('../../fontes/DINNeuzeitGroteskStd-Light/dinneuzeitgroteskstd-light-webfont.svg#DINNeuzeitGroteskStdLightRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINNeuzeitGroteskStdBoldCnRg';
+    src: url('../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.eot');
+    src: url('../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.woff') format('woff'),
+         url('../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UniversLTStd55Regular';
+    src: url('../../fontes/UniversLTStd/universltstd-webfont.eot');
+    src: url('../../fontes/UniversLTStd/universltstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fontes/UniversLTStd/universltstd-webfont.woff') format('woff'),
+         url('../../fontes/UniversLTStd/universltstd-webfont.ttf') format('truetype'),
+         url('../../fontes/UniversLTStd/universltstd-webfont.svg#UniversLTStd55Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UniversLTStd57CnRegular';
+    src: url('../../fontes/UniversLTStdCn/universltstd-cn-webfont.eot');
+    src: url('../../fontes/UniversLTStdCn/universltstd-cn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fontes/UniversLTStdCn/universltstd-cn-webfont.woff') format('woff'),
+         url('../../fontes/UniversLTStdCn/universltstd-cn-webfont.ttf') format('truetype'),
+         url('../../fontes/UniversLTStdCn/universltstd-cn-webfont.svg#UniversLTStd57CnRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ============= global ============== */
+
+body
+{
+	background:#fff;
+	margin: 0px;
+	display:block;
+	padding:0;
+	background-position: top;
+}
+
+select {
+	display:block;
+	background: url(../../imagens/site/btn_select.png) no-repeat;
+	height:29px;
+	border: 1;
+	border-radius: 5px;
+	overflow:hidden;
+	padding:5px;
+	margin-bottom:5px;
+}
+
+body, p, table, td, th, input, textarea, select
+{
+	font-family: Arial;
+	font-size: 11px;
+	color: #666;
+	margin: 0px;
+}
+
+input[type=checkbox]
+{
+	display:block;
+	float:left;
+	margin: 1px 5px;
+	background-color:#ebebeb;
+	background-color:#00FF00; 
+	border: solid 1px #006699; 
+	border-bottom: dashed 3px; #000;
+}
+
+input[type=submit]
+{
+	color: #fff;
+	background: #b9b38b;
+	font-size:11px;
+	border:none;
+	height:19px;
+	padding-top:0px;
+	display:table-cell;
+	vertical-align: middle;
+}
+
+textarea
+{
+	width: 340px;
+	height: 100px;
+	background-color:#ebebeb;
+	border: 1px solid #676767;
+	margin:10px 0px 10px 0px;
+}
+
+textarea:focus
+{
+	border: 1px solid #676767;
+}
+/* ============= layout ============== */
+
+#div_popup_newsletter
+{
+	display:block;
+	width:80%;
+	height:100%;
+	margin:0 auto;
+	margin-top:80px;
+}
+
+.form_popup
+{
+	Font-family: Calibri;
+}
+
+.form_popup p
+{
+	font-size:17px;
+	margin-bottom:20px
+}
+
+.form_popup input[type=text]
+{
+	display:block;
+	font-size:13px;
+	background:#f9f8f6;
+	border:0;
+	margin-bottom:8px;
+	width:99%;
+	height:22px;
+	color:#acabaa;
+	font-style: italic; 
+	padding-left:5px;
+	padding-right:-5px;
+}
+
+.form_popup input[type=submit]
+{
+	font-size:12px;
+	float:right;
+	padding:5px 10px 5px 10px;
+	height:24px;
+}
+
+.div_centro
+{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.div_centro p
+{
+	display:block;
+	text-align:center;
+	font-size:16px;
+	margin-top:120px;
+}

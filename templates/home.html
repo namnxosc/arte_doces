@@ -1,0 +1,86 @@
+<div id="scroll_infinito" class="transitions-enabled clearfix ">
+	[descricao]
+</div>
+<input id="paginacao_scroll" type="hidden" value="2"/>
+<input id="paginacao_scroll2" type="hidden" value="1"/>
+<div id="loadmoreajaxloader" style="display:none;"><center><img src="[url_virtual]imagens/site/ajax-loader.gif" /></center></div>
+<br/>
+<script type="text/javascript">
+	var c = $("#paginacao_scroll").val();
+	var d = $("#paginacao_scroll2").val();
+	$(window).scroll(function()
+	{		
+		if($(window).scrollTop() == $(document).height() - $(window).height())
+		{
+			$('div#loadmoreajaxloader').show();
+			if(this.timer)
+			 {
+				clearInterval(this.timer);
+			 }
+			 else
+			 {
+			  
+			 }
+			 this.timer=window.setTimeout(function(){		 
+				//console.log('c='+c+' d='+d);
+				var url_virtual = $("#url_virtual").val();
+				$.ajax({
+				url: "ajax/loadmore.php",
+				data: {limite_01: ""+c+""},
+				cache: false,
+				success: function(html)
+				{
+				
+					if(html.match(/.*sem_registros.*/i))
+					{
+						$('div#loadmoreajaxloader').html('');
+						$('div#loadmoreajaxloader').append('');
+					}
+					else
+					{
+						if(c != d)
+						{
+							$("#paginacao_scroll2").val(c);
+							c++;
+							$("#paginacao_scroll").val(c);
+							
+							var $container = $('#scroll_infinito');
+
+							var $boxes = $( html );
+							if($boxes != "")
+							{
+								$container.append( $boxes ).masonry( 'appended', $boxes);
+								$container.masonry( 'reload' );
+								$('div#loadmoreajaxloader').hide();
+							}
+							else
+							{
+							
+							}						
+						}
+					}
+					setTimeout(function(){
+						plugin_masonry('scroll_infinito');
+					 },2000);
+					FB.XFBML.parse();
+				}
+				});
+			},2000);
+		}
+		if(this.timer_02)
+		 {
+			clearInterval(this.timer_02);
+		 }
+		 else
+		 {
+		  
+		 }
+		 this.timer_02=window.setTimeout(function(){
+			plugin_masonry('scroll_infinito');
+		 },1000);
+	});
+ 
+	$(window).load(function() {
+		plugin_masonry('scroll_infinito');
+	});
+</script>

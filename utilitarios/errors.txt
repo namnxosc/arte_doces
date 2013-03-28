@@ -1,0 +1,46 @@
+[13-Mar-2005 08:39:23] PHP Warning:  OpenDir: Invalid argument (errno 22) in c:\phpdev\www\balu\painel\utilitarios\img_util.php on line 86
+[13-Mar-2005 08:39:23] PHP Fatal error:  Call to a member function on a non-object in c:\phpdev\www\balu\painel\utilitarios\img_util.php on line 87
+[13-Mar-2005 09:09:38] PHP Warning:  OpenDir: Invalid argument (errno 22) in c:\phpdev\www\balu\painel\utilitarios\img_util.php on line 86
+[13-Mar-2005 09:09:38] PHP Fatal error:  Call to a member function on a non-object in c:\phpdev\www\balu\painel\utilitarios\img_util.php on line 87
+[02-Apr-2005 08:38:46] PHP Warning:  ftp_put(): PORT command successful in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[02-Apr-2005 08:38:46] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[02-Apr-2005 08:44:08] PHP Warning:  ftp_put(): PORT command successful in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[02-Apr-2005 08:44:08] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[02-Apr-2005 09:17:44] PHP Warning:  OpenDir: Invalid argument (errno 22) in c:\phpdev\www\balu\painel\utilitarios\img_util.php on line 86
+[02-Apr-2005 09:17:44] PHP Fatal error:  Call to a member function on a non-object in c:\phpdev\www\balu\painel\utilitarios\img_util.php on line 87
+[16-Apr-2005 07:50:38] PHP Warning:  ftp_put(): PORT command successful in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[16-Apr-2005 07:50:38] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[16-Apr-2005 07:53:04] PHP Warning:  ftp_put(): PORT command successful in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[16-Apr-2005 07:53:04] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in c:\phpdev\www\balu\inc\funcoes.php on line 187
+[06-Aug-2005 14:01:43] PHP Warning:  OpenDir: Invalid argument (errno 22) in c:\phpdev\www\liberdade\painel\utilitarios\img_util.php on line 86
+[06-Aug-2005 14:01:43] PHP Fatal error:  Call to a member function on a non-object in c:\phpdev\www\liberdade\painel\utilitarios\img_util.php on line 87
+[22-Oct-2005 11:32:36] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\liberdade\painel\utilitarios\img_util.php on line 86
+[22-Oct-2005 11:32:36] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\liberdade\painel\utilitarios\img_util.php on line 87
+[22-Oct-2005 11:33:21] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\liberdade\painel\utilitarios\img_util.php on line 86
+[22-Oct-2005 11:33:21] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\liberdade\painel\utilitarios\img_util.php on line 87
+[11-Nov-2005 08:55:16] PHP Fatal error:  Call to undefined function:  aviso() in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 73
+[11-Nov-2005 08:55:54] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 86
+[11-Nov-2005 08:55:54] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 87
+[14-Nov-2005 15:43:56] PHP Fatal error:  Call to undefined function:  aviso() in e:\phpdev\www\raiox\painel\utilitarios\visualiza_util.php on line 26
+[18-Nov-2005 14:48:40] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[18-Nov-2005 14:48:44] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[18-Nov-2005 14:48:57] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[18-Nov-2005 14:49:03] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[18-Nov-2005 14:49:10] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[18-Nov-2005 15:13:29] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[21-Nov-2005 18:00:01] PHP Fatal error:  Call to undefined function:  aviso() in e:\phpdev\www\raiox\painel\utilitarios\visualiza_util.php on line 26
+[22-Nov-2005 17:40:12] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[22-Nov-2005 17:56:55] PHP Warning:  Failed opening '../../inc/formatacao.php' for inclusion (include_path='.;E:/phpdev/php/includes;E:/phpdev/php/class') in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 14
+[07-Dec-2005 08:25:29] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 85
+[07-Dec-2005 08:25:29] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 86
+[07-Dec-2005 08:36:40] PHP Fatal error:  Call to undefined function:  aviso() in e:\phpdev\www\raiox\painel\utilitarios\visualiza_util.php on line 26
+[14-Dec-2005 07:13:25] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 296
+[14-Dec-2005 07:13:25] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 297
+[14-Dec-2005 07:15:15] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 296
+[14-Dec-2005 07:15:15] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 297
+[14-Dec-2005 07:15:46] PHP Warning:  OpenDir: Invalid argument (errno 22) in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 296
+[14-Dec-2005 07:15:46] PHP Fatal error:  Call to a member function on a non-object in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 297
+[14-Dec-2005 09:33:41] PHP Warning:  php_hostconnect: connect failed in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 400
+[14-Dec-2005 09:33:41] PHP Warning:  ftp_login() expects parameter 1 to be resource, boolean given in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 403
+[14-Dec-2005 09:33:41] PHP Warning:  ftp_delete() expects parameter 1 to be resource, boolean given in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 406
+[14-Dec-2005 09:33:41] PHP Warning:  ftp_close() expects parameter 1 to be resource, boolean given in e:\phpdev\www\raiox\painel\utilitarios\img_util.php on line 413

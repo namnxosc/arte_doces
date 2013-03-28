@@ -1,0 +1,653 @@
+[31-Oct-2012 13:50:04] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 13:50:04] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 13:50:04] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 13:50:04] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 13:50:04] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 13:50:04] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 13:50:04] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 13:50:04] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 13:50:13] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 13:50:13] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 13:50:13] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 13:50:13] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 13:50:18] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 13:50:18] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 13:50:18] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 13:50:18] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 13:50:20] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 13:50:20] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 13:50:20] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 13:50:20] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 13:50:22] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 13:50:22] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 13:50:22] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 13:50:22] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:09:35] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:09:35] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:09:35] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:09:35] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:26:35] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:26:35] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:26:35] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:26:35] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:26:36] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:26:36] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:26:36] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:26:36] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:26:39] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:26:39] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:26:39] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:26:39] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:30:15] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:30:15] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:30:15] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:30:15] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:30:28] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:30:28] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:30:28] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:30:28] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:31:27] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:31:27] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:31:27] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:31:27] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:31:44] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:31:44] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:31:44] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:31:44] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 14:45:30] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 14:45:30] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 14:45:30] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 14:45:30] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 15:07:38] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 15:07:38] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 15:07:38] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 15:07:38] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[31-Oct-2012 15:52:03] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[31-Oct-2012 15:52:03] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[31-Oct-2012 15:52:03] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[31-Oct-2012 15:52:03] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[01-Nov-2012 05:46:49] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[01-Nov-2012 05:46:49] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[01-Nov-2012 05:46:49] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[01-Nov-2012 05:46:49] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[01-Nov-2012 20:19:55] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[01-Nov-2012 20:19:55] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[01-Nov-2012 20:19:55] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[01-Nov-2012 20:19:55] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Nov-2012 08:03:52] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Nov-2012 08:03:52] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Nov-2012 08:03:52] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Nov-2012 08:03:52] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Nov-2012 08:03:53] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Nov-2012 08:03:53] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Nov-2012 08:03:53] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Nov-2012 08:03:53] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Nov-2012 08:09:29] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Nov-2012 08:09:29] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Nov-2012 08:09:29] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Nov-2012 08:09:29] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Nov-2012 08:09:31] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Nov-2012 08:09:31] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Nov-2012 08:09:31] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Nov-2012 08:09:31] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[05-Nov-2012 06:10:19] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[05-Nov-2012 06:10:19] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[05-Nov-2012 06:10:19] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[05-Nov-2012 06:10:19] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[05-Nov-2012 06:13:59] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[05-Nov-2012 06:13:59] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[05-Nov-2012 06:13:59] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[05-Nov-2012 06:13:59] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[05-Nov-2012 06:14:00] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[05-Nov-2012 06:14:00] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[05-Nov-2012 06:14:00] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[05-Nov-2012 06:14:00] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[05-Nov-2012 11:46:04] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[05-Nov-2012 11:46:04] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[05-Nov-2012 11:46:04] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[05-Nov-2012 11:46:04] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[05-Nov-2012 11:46:05] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[05-Nov-2012 11:46:05] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[05-Nov-2012 11:46:05] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[05-Nov-2012 11:46:05] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[09-Nov-2012 11:53:40] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[09-Nov-2012 11:53:40] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[09-Nov-2012 11:53:40] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[09-Nov-2012 11:53:40] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[14-Nov-2012 07:34:03] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[14-Nov-2012 07:34:03] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Nov-2012 07:34:03] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[14-Nov-2012 07:34:03] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[14-Nov-2012 07:34:04] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[14-Nov-2012 07:34:04] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Nov-2012 07:34:04] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[14-Nov-2012 07:34:04] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[14-Nov-2012 07:38:02] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[14-Nov-2012 07:38:02] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Nov-2012 07:38:02] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[14-Nov-2012 07:38:02] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[14-Nov-2012 07:38:02] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[14-Nov-2012 07:38:02] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Nov-2012 07:38:02] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[14-Nov-2012 07:38:02] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 12:53:01] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 12:53:01] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 12:53:01] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 12:53:01] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 12:53:05] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 12:53:05] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 12:53:05] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 12:53:05] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 15:02:41] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 15:02:41] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 15:02:41] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 15:02:41] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 15:03:05] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 15:03:05] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 15:03:05] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 15:03:05] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 15:03:06] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 15:03:06] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 15:03:06] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 15:03:06] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 15:03:07] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 15:03:07] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 15:03:07] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 15:03:07] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[03-Dec-2012 15:03:07] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[03-Dec-2012 15:03:07] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[03-Dec-2012 15:03:07] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[03-Dec-2012 15:03:07] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[04-Dec-2012 15:26:51] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Dec-2012 15:26:51] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[04-Dec-2012 15:26:51] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Dec-2012 15:26:51] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[04-Dec-2012 15:26:51] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Dec-2012 15:26:51] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[04-Dec-2012 15:26:51] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Dec-2012 15:26:51] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[06-Dec-2012 14:59:07] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[06-Dec-2012 14:59:07] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[06-Dec-2012 14:59:07] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[06-Dec-2012 14:59:07] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[06-Dec-2012 14:59:11] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[06-Dec-2012 14:59:11] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[06-Dec-2012 14:59:11] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[06-Dec-2012 14:59:11] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[06-Dec-2012 14:59:39] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[06-Dec-2012 14:59:39] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[06-Dec-2012 14:59:39] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[06-Dec-2012 14:59:39] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[06-Dec-2012 15:08:22] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[06-Dec-2012 15:08:22] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[06-Dec-2012 15:08:22] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[06-Dec-2012 15:08:22] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[10-Dec-2012 05:19:25] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[10-Dec-2012 05:19:25] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[10-Dec-2012 05:19:25] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[10-Dec-2012 05:19:25] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 60
+[15-Jan-2013 12:35:03] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:35:03] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:35:03] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:35:03] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:35:03] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:35:08] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:35:08] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:35:08] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:35:08] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:35:08] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:35:50] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:35:50] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:35:50] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:35:50] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:35:50] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:35:51] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:35:51] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:35:51] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:35:51] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:35:51] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:36:00] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:36:00] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:36:00] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:36:00] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:36:00] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:36:10] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:36:10] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:36:10] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:36:10] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:36:10] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:36:32] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:36:32] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:36:32] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:36:32] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:36:32] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:36:43] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:36:43] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:36:43] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:36:43] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:36:43] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:40:46] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:40:46] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:40:46] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:40:46] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:40:46] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:40:46] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:40:46] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:40:46] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:40:46] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:40:46] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:40:51] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:40:51] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:40:51] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:40:51] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:40:51] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:41:44] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:41:44] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:41:44] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:41:44] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:41:44] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:41:45] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:41:45] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:41:45] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:41:45] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:41:45] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:41:49] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:41:49] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:41:49] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:41:49] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:41:49] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:44:56] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:44:56] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:44:56] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:44:56] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:44:56] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:44:57] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:44:57] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:44:57] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:44:57] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:44:57] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:45:02] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:45:02] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:45:02] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:45:02] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:45:02] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:46:03] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:46:03] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:46:03] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:46:03] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:46:03] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:46:04] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:46:04] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:46:04] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:46:04] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:46:04] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:46:08] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:46:08] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:46:08] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:46:08] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:46:08] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:48:02] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:48:02] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:48:02] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:48:02] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:48:02] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:49:43] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:49:43] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:49:43] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:49:43] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:49:43] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:56:59] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:56:59] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:56:59] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:56:59] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:56:59] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 12:58:50] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 12:58:50] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 12:58:50] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 12:58:50] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 12:58:50] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 13:01:24] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 13:01:24] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 13:01:24] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 13:01:24] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 13:01:24] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 13:04:04] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 13:04:04] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 13:04:04] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 13:04:04] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 13:04:04] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 13:14:15] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 13:14:15] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 13:14:15] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 13:14:15] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 13:14:15] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 13:17:12] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 13:17:12] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 13:17:12] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 13:17:12] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 13:17:12] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Jan-2013 13:35:38] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Jan-2013 13:35:38] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Jan-2013 13:35:38] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Jan-2013 13:35:38] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Jan-2013 13:35:38] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[19-Jan-2013 08:16:18] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[19-Jan-2013 08:16:18] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[19-Jan-2013 08:16:18] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[19-Jan-2013 08:16:20] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[19-Jan-2013 08:16:20] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[19-Jan-2013 08:16:28] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[19-Jan-2013 08:16:28] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[19-Jan-2013 08:16:28] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[19-Jan-2013 08:16:29] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[19-Jan-2013 08:16:29] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[24-Jan-2013 17:07:50] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[24-Jan-2013 17:07:50] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[24-Jan-2013 17:07:50] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[24-Jan-2013 17:07:50] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[24-Jan-2013 17:07:50] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[24-Jan-2013 17:07:50] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[24-Jan-2013 17:07:50] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[24-Jan-2013 17:07:50] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[24-Jan-2013 17:07:50] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[24-Jan-2013 17:07:50] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[24-Jan-2013 20:15:51] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[24-Jan-2013 20:15:51] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[24-Jan-2013 20:15:51] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[24-Jan-2013 20:15:51] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[24-Jan-2013 20:15:51] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[24-Jan-2013 20:15:53] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[24-Jan-2013 20:15:53] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[24-Jan-2013 20:15:53] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[24-Jan-2013 20:15:53] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[24-Jan-2013 20:15:53] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:03:33] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:03:33] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:03:33] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:03:33] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:03:33] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:03:56] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:03:56] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:03:56] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:03:56] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:03:56] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:03:58] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:03:58] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:03:58] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:03:58] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:03:58] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:04:02] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:04:02] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:04:02] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:04:02] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:04:02] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:04:46] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:04:46] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:04:46] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:04:46] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:04:46] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:05:52] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:05:52] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:05:52] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:05:52] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:05:52] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:06:11] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:06:11] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:06:11] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:06:11] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:06:11] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:22:37] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:22:37] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:22:37] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:22:37] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:22:37] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 11:52:07] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 11:52:07] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 11:52:07] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 11:52:07] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 11:52:07] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 12:23:01] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 12:23:01] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 12:23:01] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 12:23:01] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 12:23:01] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[14-Feb-2013 12:34:03] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[14-Feb-2013 12:34:03] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[14-Feb-2013 12:34:03] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[14-Feb-2013 12:34:03] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[14-Feb-2013 12:34:03] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 07:45:34] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 07:45:34] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 07:45:34] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 07:45:34] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 07:45:34] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 07:45:37] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 07:45:37] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 07:45:37] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 07:45:37] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 07:45:37] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 07:45:39] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 07:45:39] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 07:45:39] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 07:45:39] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 07:45:39] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 07:47:47] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 07:47:47] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 07:47:47] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 07:47:47] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 07:47:47] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 07:47:49] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 07:47:49] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 07:47:49] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 07:47:49] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 07:47:49] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 09:18:14] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 09:18:14] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 09:18:14] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 09:18:14] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 09:18:14] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 09:19:03] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 09:19:03] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 09:19:03] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 09:19:03] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 09:19:03] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 09:32:19] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 09:32:19] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 09:32:19] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 09:32:19] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 09:32:19] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 09:32:47] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 09:32:47] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 09:32:47] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 09:32:47] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 09:32:47] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 09:32:58] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 09:32:58] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 09:32:58] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 09:32:58] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 09:32:58] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 11:17:28] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 11:17:28] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 11:17:28] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 11:17:28] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 11:17:28] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 11:19:10] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 11:19:10] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 11:19:10] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 11:19:10] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 11:19:10] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 11:57:44] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 11:57:44] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 11:57:44] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 11:57:44] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 11:57:44] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:05:30] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:05:30] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:05:30] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:05:30] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:05:30] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:06:12] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:06:12] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:06:12] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:06:12] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:06:12] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:06:28] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:06:28] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:06:28] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:06:28] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:06:28] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:07:28] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:07:28] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:07:28] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:07:28] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:07:28] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:07:34] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:07:34] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:07:34] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:07:34] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:07:34] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:08:17] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:08:17] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:08:17] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:08:17] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:08:17] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:08:24] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:08:24] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:08:24] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:08:24] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:08:24] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 12:08:30] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 12:08:30] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 12:08:30] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 12:08:30] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 12:08:30] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 13:05:24] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 13:05:24] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 13:05:24] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 13:05:24] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 13:05:24] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 14:28:44] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 14:28:44] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 14:28:44] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 14:28:44] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 14:28:44] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[15-Feb-2013 14:28:45] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[15-Feb-2013 14:28:45] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[15-Feb-2013 14:28:45] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[15-Feb-2013 14:28:45] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[15-Feb-2013 14:28:45] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[21-Feb-2013 09:26:37] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[21-Feb-2013 09:26:37] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[21-Feb-2013 09:26:37] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[21-Feb-2013 09:26:37] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[21-Feb-2013 09:26:37] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[21-Feb-2013 09:26:38] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[21-Feb-2013 09:26:38] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[21-Feb-2013 09:26:38] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[21-Feb-2013 09:26:38] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[21-Feb-2013 09:26:38] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[21-Feb-2013 09:26:40] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[21-Feb-2013 09:26:40] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[21-Feb-2013 09:26:40] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[21-Feb-2013 09:26:40] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[21-Feb-2013 09:26:40] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[23-Feb-2013 07:06:31] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[23-Feb-2013 07:06:31] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[23-Feb-2013 07:06:31] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[23-Feb-2013 07:06:31] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[23-Feb-2013 07:06:31] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[23-Feb-2013 17:00:25] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[23-Feb-2013 17:00:25] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[23-Feb-2013 17:00:25] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[23-Feb-2013 17:00:25] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[23-Feb-2013 17:00:25] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[23-Feb-2013 17:00:26] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[23-Feb-2013 17:00:26] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[23-Feb-2013 17:00:26] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[23-Feb-2013 17:00:26] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[23-Feb-2013 17:00:26] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[23-Feb-2013 17:00:27] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[23-Feb-2013 17:00:27] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[23-Feb-2013 17:00:27] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[23-Feb-2013 17:00:27] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[23-Feb-2013 17:00:27] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:51:57] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:51:57] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:51:57] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:51:57] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:51:57] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:52:08] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:52:08] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:52:08] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:52:08] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:52:08] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:52:23] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:52:23] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:52:23] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:52:23] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:52:23] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:54:11] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:54:11] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:54:11] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:54:11] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:54:11] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:54:22] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:54:22] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:54:22] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:54:22] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:54:22] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:54:27] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:54:27] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:54:27] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:54:27] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:54:27] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[25-Feb-2013 19:54:43] PHP Warning:  imagecreatefrompng(../imagens/produtos/sem_imagem.png) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 25
+[25-Feb-2013 19:54:43] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 33
+[25-Feb-2013 19:54:43] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 34
+[25-Feb-2013 19:54:43] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 58
+[25-Feb-2013 19:54:43] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 61
+[04-Mar-2013 19:59:28] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:00:05] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:00:38] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:01:24] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:02:27] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:02:31] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:02:37] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:02:40] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:02:40] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:03:34] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:03:37] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:03:39] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:03:39] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:03:45] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:04:30] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:04:37] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:05:20] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:05:27] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:05:41] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:06:02] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 266241 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 59
+[04-Mar-2013 20:06:29] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:06:29] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:06:56] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:06:56] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:07:11] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:07:11] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:07:11] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:07:12] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:08:20] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:08:20] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:09:13] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:09:13] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:09:14] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:09:14] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:09:36] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8000 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:09:36] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:15:48] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:15:50] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2592 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:15:50] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2592 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:17:55] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:18:07] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:20:27] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:20:29] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:21:52] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56
+[04-Mar-2013 20:21:53] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10368 bytes) in /home/shoppin/public_html/novo_site/utilitarios/thumbnail.php on line 56

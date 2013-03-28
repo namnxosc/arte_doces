@@ -1,0 +1,12 @@
+[14-Jan-2013 12:15:04] PHP Warning:  move_uploaded_file(/home/shoppin/public_html/borrar/upload/mapa.png) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in /home/shoppin/public_html/borrar/upload.php on line 11
+[14-Jan-2013 12:15:04] PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move '/tmp/phpq8XMrx' to '/home/shoppin/public_html/borrar/upload/mapa.png' in /home/shoppin/public_html/borrar/upload.php on line 11
+[04-Mar-2013 19:47:33] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 19:54:39] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 19:55:37] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 19:57:57] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 20:12:17] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 20:14:03] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 20:26:50] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 20:28:52] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 20:31:19] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[04-Mar-2013 20:32:45] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0

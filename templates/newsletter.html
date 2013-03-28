@@ -1,0 +1,41 @@
+<div id="div_popup_newsletter">
+	<form class="form_popup" name="form_newsletter" method="post" action="[action]">
+		
+			<p>Cadastre-se e receba nossas noticias e promoções.</p>
+			<input value="nome" type="text" name="_nome" id="_nome" size="32" tabindex="1" onfocus="{this.value='';}" onblur="if(this.value=='') {this.value='nome';}" />
+			
+			<input value="email" type="text" name="_email" id="_email" size="32" tabindex="2" onfocus="{this.value='';}" onblur="if(this.value=='') {this.value='email';}" />
+										
+			<div class="form_aviso" id="div_msg"></div>
+			
+			<input type="submit" class="enviar_cadastro" onClick="return envia_form('site_newsletter');" value="enviar"/>
+			
+		<input type="hidden" value="newsletter" name="acao_adm">
+		<input type="hidden" value="enviar" name="acao">
+	</form>			
+</div>	
+
+<script type="text/javascript">
+	function envia_form()
+	{	
+		// Check fields
+		var nome = $.trim($('#_nome').val());
+		var email = $.trim($('#_email').val());
+		var bb = true;
+		if (!nome || nome.length == 0 || nome == "nome")
+		{
+			$('#div_msg').html('');
+			$('#div_msg').append('<b style=\"color:#B40101\";>Por favor digite um nome.</b>');
+			$("#_nome").val('nome');
+			bb = false;
+		}
+		else if (!email || email.length == 0 || email == "email")
+		{
+			$('#div_msg').html('');
+			$('#div_msg').append('<b style=\"color:#B40101\";>Por favor digite o E-mail.</b>');
+			$("#_email").val('email');
+			bb = false;
+		}
+		return bb;
+	}
+</script>

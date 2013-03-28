@@ -1,0 +1,36 @@
+<div id="conteudo_pagina">
+	<div class="interna_centro_contato">
+		
+		<div id="header_contato">
+			<div class="header_contato_interno">
+				<h1>CONTATO</h1>
+				
+				<p>[titulo]</p>
+				<br/>
+				[contatos]
+				<br />
+				<p>[email]</p>
+				<br />
+				<p style="font-weight: bold;">[endereco][numero]</p>
+				<p>[cep][cidade][uf]</p>
+			</div>
+			<div class="header_contato_formulario">
+				<form name="formulario_contato" action="[action]" method="post" class="formulario_contato">
+					
+					<input type="text" name="_nome" value="nome" onfocus="{this.value='';}" onblur="if(this.value=='') {this.value='nome';}"/>
+					<hr>
+					<input type="text" name="_email" value="email" onfocus="{this.value='';}" onblur="if(this.value=='') {this.value='email';}"/>
+					<hr>
+					<textarea name="_mensagem" onfocus="{this.value='';}" onblur="if(this.value=='') {this.value='escreva sua mensagem aqui';}">escreva sua mensagem aqui</textarea>
+					<hr>
+					<input type="submit" name="enviar" value="enviar" onclick="return checa_campos('valida_contato');"/>
+					
+				</form>
+			</div>
+		</div>
+		[contato_js]
+		<div id="mapa_localizacao">
+			[mapa]
+		</div>
+	</div>
+</div>

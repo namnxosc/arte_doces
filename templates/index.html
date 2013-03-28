@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+[facebook_compartilhar]
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="DESCRIPTION" content="[site_descricao]" />
+<meta name="KEYWORDS" lang="pt" content="[site_palavra_chave]" />
+
+<meta name="RATING" content="General" />
+<meta name="author" content="[site_autor]" />
+<title>[site_titulo]</title>
+
+<script type="text/javascript" src="[url_virtual]inc/js/jquery.js" ></script>
+
+<script src="[url_virtual]inc/js/jquery.blockUI.js"></script>
+
+
+<script type="text/javascript" src="[url_virtual]plugins/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="[url_virtual]plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="[url_virtual]plugins/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<!-- Plugin para ordenar as divs-->
+<script src="[url_virtual]plugins/masonry/jquery.masonry.js"></script>
+<script src="[url_virtual]plugins/masonry/js/modernizr-transitions.js"></script>
+<!-- fim Plugin para ordenar as divs-->
+
+<script src="[url_virtual]inc/js/java_script.js"></script>
+
+<link href="[url_virtual]inc/css/formatacao.css" rel="stylesheet" type="text/css" />
+
+<!-- Plugin Masonry-->
+<link href="[url_virtual]plugins/masonry/css/style.css" rel="stylesheet" type="text/css" />
+<!-- END Plugin Masonry-->
+
+</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			/*window.fbAsyncInit = function() {
+			FB.init({appId: '100000652246777', status: true, cookie: true,
+					 xfbml: true});
+		  };
+		  (function() {
+			var e = document.createElement('script'); e.async = true;
+			e.src = document.location.protocol +
+			  '//connect.facebook.net/pt_BR/all.js';
+			document.getElementById('fb-root').appendChild(e);
+		  }());*/
+		</script>
+
+
+		<!-- Facebook pluggin  -->
+		<script>
+			(function(d, s, id) 
+			{
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+			(document, 'script', 'facebook-jssdk'));
+			/*imagemcursor = 'http://img9.imageshack.us/img9/5186/orkutsj.gif';
+			numeroimg= '5';*/
+		</script>
+		
+		<div id="largura_menu_topo" class="largura">
+		
+			<div id="menu_topo" class="centro">
+
+				<div id="topo_izquerda_cima" class="menu">
+					[menu]		
+				</div><!-- fecha topo_centro_cima -->
+				
+				<div id="topo_direita_cima" class="menu_02">
+					[menu_direito]					
+				</div><!-- fecha topo_direita_cima -->
+			</div>
+		</div>
+			
+		<div id="largura_banner">
+			<div class="centro">
+				<div id="logo">
+					[logo]
+				</div>
+				<hr>
+				<div id="conteudo_sub_menu">
+						[sub_menu]
+				</div>
+			</div>
+		</div>
+		<div id="base_banner"></div>
+
+		<div class="corpo">
+			[corpo]
+		</div>
+		<br/><br/>
+		<input type="hidden" id="url_virtual" value="[url_virtual]">
+		<input type="hidden" id="url_fisico" value="[url_fisico]">
+	</body>
+</html>

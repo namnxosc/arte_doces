@@ -1,0 +1,1295 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tempo de Geração: Out 15, 2012 as 08:23 PM
+-- Versão do Servidor: 5.1.36
+-- Versão do PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Banco de Dados: `shopp_garden`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_album`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_album` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `estado` char(1) DEFAULT NULL,
+  `data_hora` datetime DEFAULT NULL,
+  `id_album_tipo` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=106 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_album`
+--
+
+INSERT INTO `shopp_garden_tbl_album` (`id`, `nome`, `estado`, `data_hora`, `id_album_tipo`) VALUES
+(1, 'vazio', 'a', NULL, 3),
+(2, 'portada', 'a', '2012-07-17 17:42:34', 3),
+(71, 'Materia 1', 'a', '2012-10-08 17:59:40', 4),
+(75, 'admin 2', 'a', '2012-10-08 18:12:51', 4),
+(78, 'carlat', 'a', '2012-10-08 18:15:53', 4),
+(84, 'Album da matéria Materia 1', 'a', '2012-10-08 18:20:32', 1),
+(87, 'Album da matéria Teste Materia 2', 'a', '2012-10-08 18:31:16', 1),
+(88, 'Album da matéria Teste Materia 1', 'a', '2012-10-08 18:42:18', 1),
+(93, 'Album da matéria sdfs', 'a', '2012-10-08 18:49:45', 1),
+(94, 'Album da matéria Loren hipsum enorem', 'a', '2012-10-09 14:45:42', 1),
+(95, 'Album da matéria Loren hipsum enorem 2', 'a', '2012-10-09 14:48:02', 1),
+(96, 'Album da matéria Loren hipsum enorem 3', 'a', '2012-10-09 14:49:30', 1),
+(97, 'Album da matéria Loren hipsum enorem 4', 'a', '2012-10-09 14:50:13', 1),
+(98, 'Album da matéria Loren hipsum enorem 5', 'a', '2012-10-09 14:53:43', 1),
+(99, 'Album da matéria Loren hipsum enorem 6', 'a', '2012-10-09 14:56:37', 1),
+(100, 'Luzz', 'a', '2012-10-09 19:25:43', 4),
+(101, 'Luz 2', 'a', '2012-10-09 19:27:08', 4),
+(102, 'Pinit', 'a', '0000-00-00 00:00:00', 2),
+(103, 'Facebook', 'a', '0000-00-00 00:00:00', 2),
+(104, '2012-10-15 19:47:39', 'x', '2012-10-15 19:47:39', 4),
+(105, '2012-10-15 20:07:25', 'x', '2012-10-15 20:07:25', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_album_tipo`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_album_tipo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_album_tipo`
+--
+
+INSERT INTO `shopp_garden_tbl_album_tipo` (`id`, `nome`) VALUES
+(1, 'Materias'),
+(2, 'Redes Sociais'),
+(3, 'Galeria'),
+(4, 'Blog');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_ambiente`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_ambiente` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  `url` varchar(150) DEFAULT NULL,
+  `tipo_menu` char(1) DEFAULT NULL,
+  `botao` varchar(50) DEFAULT NULL,
+  `pai_id` int(5) DEFAULT NULL,
+  `ver` char(1) DEFAULT NULL,
+  `ordem` char(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=226 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_ambiente`
+--
+
+INSERT INTO `shopp_garden_tbl_ambiente` (`id`, `nome`, `url`, `tipo_menu`, `botao`, `pai_id`, `ver`, `ordem`) VALUES
+(1, 'sistema', '#', 'p', 'Sistema', 0, 's', 'l'),
+(5, 'usuario_editar', 'index.php?msg=2&acao_adm=usuario_adm&layout=lista', 'f', 'Editar', 42, 'n', 'a'),
+(9, 'usuario_novo', 'index.php?msg=5&acao_adm=usuario_adm&acao=novo&layout=form', 'f', 'Novo', 42, 'n', 'a'),
+(11, 'sistema_ambiente_novo', 'index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form', 'n', 'Novo', 23, 's', '0'),
+(12, 'sistema_ambiente_editar_excluir', 'index.php?msg=2&acao_adm=ambiente_adm&layout=lista', 'n', 'Editar', 23, 's', '0'),
+(17, 'ilustrar_ album_editar', 'index.php?msg=2&acao_adm=album_adm&layout=lista', 'n', 'Editar', 29, 's', '0'),
+(22, 'sistema_auditoria', 'index.php?msg=13&acao_adm=auditoria&layout=lista', 'f', 'Auditoria', 1, 's', '0'),
+(23, 'sistema_ambiente', 'index.php?msg=2&acao_adm=ambiente_adm&layout=lista', 'f', 'Ambientes', 1, 's', '0'),
+(26, 'ilustrar_album_novo', 'index.php?msg=5&acao_adm=album_adm&acao=nova&layout=form', 'n', 'Novo', 29, 's', '0'),
+(28, 'ilustrar', '#', 'p', 'Ilustrar', 0, 's', 'g'),
+(29, 'ilustrar_album', 'index.php?msg=2&acao_adm=album_adm&layout=lista', 'f', 'Album', 28, 's', '0'),
+(30, 'ilustrar_imagem_excluir', 'index.php?msg=2&acao_adm=imagem_adm&layout=lista', 'n', 'Excluir', 37, 's', '0'),
+(32, 'ilustrar_ album_excluir', 'index.php?msg=2&acao_adm=album_adm&layout=lista', 'n', 'Excluir', 29, 's', '0'),
+(35, 'ilustrar_imagem_editar', 'index.php?msg=2&acao_adm=imagem_adm&layout=lista', 'n', 'Editar', 37, 's', '0'),
+(36, 'ilustrar_imagem_nova', 'index.php?msg=5&acao_adm=imagem_adm&acao=nova&layout=form', 'n', 'Nova', 37, 's', '0'),
+(37, 'ilustrar_ imagem', 'index.php?msg=2&acao_adm=imagem_adm&layout=lista', 'f', 'Imagens', 28, 's', '0'),
+(42, 'usuario', 'index.php?msg=2&acao_adm=usuario_adm&layout=lista', 'p', 'Usuários', 0, 's', 'f'),
+(44, 'usuario_excluir', 'index.php?msg=2&acao_adm=usuario_adm&layout=lista', 'f', 'Excluir', 42, 'n', 'a'),
+(123, 'sistema _ambiente_excluir', 'index.php?msg=2&acao_adm=ambiente_adm&layout=lista', 'n', 'Excluir', 23, 's', '0'),
+(137, 'sistema_usuario_tipo', 'index.php?msg=2&acao_adm=usuario_tipo_adm&layout=lista', 'f', 'Usuário Tipo', 1, 's', '0'),
+(138, 'sistema_usuario_tipo_editar', 'index.php?acao_adm=usuario_tipo_adm&layout=lista&msg=2', 'n', 'Editar', 137, 's', '0'),
+(139, 'sistema_usuario_tipo_excluir', 'index.php?acao_adm=usuario_tipo_adm&layout=lista&msg=2', 'n', 'Excluir', 137, 's', '0'),
+(140, 'sistema_usuario_tipo_novo', 'index.php?acao_adm=usuario_tipo_adm&acao=novo&layout=form&msg=5', 'n', 'Novo', 137, 's', '0'),
+(153, 'conteudo_mensagem', 'index.php?msg=2&acao_adm=mensagem_adm&layout=lista', 'f', 'Mensagens', 24, 's', '0'),
+(154, 'conteudo_mensagem_editar', 'index.php?msg=2&acao_adm=mensagem_adm&layout=lista', 'n', 'Editar', 153, 's', '0'),
+(155, 'conteudo_mensagem_excluir', 'index.php?msg=2&acao_adm=mensagem_adm&layout=lista', 'n', 'Excluir', 153, 's', '0'),
+(156, 'conteudo_mensagem_novo', 'index.php?msg=5&acao_adm=mensagem_adm&layout=form&acao=novo', 'n', 'Nova', 153, 's', '0'),
+(181, 'sistema_usuario_ambiente', 'index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista', 'f', 'Usuário Amb.', 1, 's', 'a'),
+(209, 'backup_bd', 'index.php?msg=2&acao_adm=backup_adm&layout=lista', 'f', 'Backup', 1, 's', 'a'),
+(219, 'menu', '#', 'p', 'Menus', 0, 's', 'h'),
+(220, 'menu_menu', 'index.php?msg=2&acao_adm=menu_site_adm&layout=lista', 'f', 'Menu Site', 219, 's', 'a'),
+(221, 'categoria', 'index.php?msg=2&acao_adm=categoria_adm&layout=lista', 'p', 'Categorias', 0, 's', 'k'),
+(222, 'materia', 'index.php?msg=2&acao_adm=materia_adm&layout=lista', 'p', 'Matérias', 0, 's', 'a'),
+(223, 'conteudo', '#', 'p', 'Conteudo', 0, 's', 'k'),
+(224, 'conteudo_pagina', 'index.php?msg=2&acao_adm=pagina_adm&layout=lista', 'f', 'Páginas', 223, 's', 'a'),
+(225, 'empresa', 'index.php?msg=2&acao_adm=empresa_adm&layout=lista', 'f', 'Empresa', 223, 's', 'b');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_arquivo`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_arquivo` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(150) DEFAULT NULL,
+  `data` datetime NOT NULL,
+  `quantidade` int(11) NOT NULL COMMENT 'de E-mails importados',
+  `id_projeto` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_arquivo`
+--
+
+INSERT INTO `shopp_garden_tbl_arquivo` (`id`, `nome`, `data`, `quantidade`, `id_projeto`) VALUES
+(1, '5966186_email.xls', '2012-07-19 18:03:56', 21, 1),
+(2, '82617187_emails.xlsx', '2012-07-20 13:17:37', 18, 1),
+(3, '92376708_emails.xls', '2012-07-20 20:02:59', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_auditoria`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_auditoria` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `data_hora` datetime DEFAULT NULL,
+  `usuario_id` int(3) DEFAULT NULL,
+  `nome` varchar(30) DEFAULT NULL,
+  `acao` varchar(250) DEFAULT NULL,
+  `ip` varchar(15) DEFAULT NULL,
+  `partida` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=362 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_auditoria`
+--
+
+INSERT INTO `shopp_garden_tbl_auditoria` (`id`, `data_hora`, `usuario_id`, `nome`, `acao`, `ip`, `partida`) VALUES
+(1, '2012-07-19 06:03:56', 1, 'Alan', 'Arquivo de E-mails importado para o projeto 1.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?acao_adm=email_adm&layout=importar&msg=182'),
+(2, '2012-07-19 06:04:41', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?acao_adm=email_adm&layout=form&msg=5'),
+(3, '2012-07-19 06:04:43', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/mkt/gc/login.php'),
+(4, '2012-07-19 06:19:11', 1, 'Alan', 'Inserção de novo E-mail: .', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?acao_adm=email_adm&layout=form&msg=5&acao=novo'),
+(5, '2012-07-20 01:17:36', 1, 'Alan', 'Arquivo de E-mails importado para o projeto 1.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?acao_adm=email_adm&layout=importar&msg=182'),
+(6, '2012-07-20 12:47:40', 1, 'Alan', 'Saiu do sistema: 1.', '186.220.243.227', 'http://www.krakendigital.com.br/clientes/bells/gc/index.php'),
+(7, '2012-07-20 03:00:45', 2, 'Carla', 'Acessou o sistema.', '186.220.243.227', 'http://www.krakendigital.com.br/clientes/bells/gc/login.php'),
+(8, '2012-07-20 06:56:14', 1, 'Alan', 'Inserção da Resposta 1 para produto: 21 .', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=5&acao_adm=pergunta_adm&acao=nova&layout=form'),
+(9, '2012-07-20 06:56:14', 1, 'Alan', 'Inserção da Resposta 1 para produto: 22 .', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=5&acao_adm=pergunta_adm&acao=nova&layout=form'),
+(10, '2012-07-20 06:56:14', 1, 'Alan', 'Inserção da Resposta 1 para produto: 23 .', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=5&acao_adm=pergunta_adm&acao=nova&layout=form'),
+(11, '2012-07-20 06:56:14', 1, 'Alan', 'Inserção da Resposta 1 para produto: 24 .', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=5&acao_adm=pergunta_adm&acao=nova&layout=form'),
+(12, '2012-07-20 06:56:14', 1, 'Alan', 'Inserção de nova Pergunta: <b>Pergunta 2</b>.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=5&acao_adm=pergunta_adm&acao=nova&layout=form'),
+(13, '2012-07-20 08:02:37', 1, 'Alan', 'Erro ao importar arquivo, e-mails já existem no banco.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?acao_adm=email_adm&layout=importar&msg=182'),
+(14, '2012-07-20 08:02:59', 1, 'Alan', 'Arquivo de E-mails importado para o projeto 1.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?acao_adm=email_adm&layout=importar&msg=178'),
+(15, '2012-07-20 08:56:09', 1, 'Alan', 'Criação de backup do sistema feito por usuario [1].', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=167&acao_adm=backup_adm&acao=novo&layout=form'),
+(16, '2012-07-20 08:56:47', 1, 'Alan', 'Exclusão de registro de backup:[1].', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=2&acao_adm=backup_adm&layout=lista'),
+(17, '2012-07-20 08:58:36', 1, 'Alan', 'Criação de backup do sistema feito por usuario [1].', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php?msg=167&acao_adm=backup_adm&acao=novo&layout=form'),
+(18, '2012-07-20 09:05:55', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/mkt/gc/index.php'),
+(19, '2012-08-02 04:16:20', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/mkt/gc/'),
+(20, '2012-10-05 05:40:49', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php?p=a'),
+(21, '2012-10-05 05:42:51', 1, 'Alan', 'Inserção de novo ambiente: menu.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(22, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 209  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(23, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 153  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(24, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 154  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(25, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 155  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(26, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 156  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(27, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 213  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(28, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 218  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(29, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 217  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(30, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 28  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(31, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 17  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(32, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 32  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(33, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 37  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(34, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 29  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(35, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 26  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(36, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 35  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(37, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 30  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(38, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 36  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(39, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 219  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(40, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 187  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(41, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 188  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(42, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 189  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(43, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 190  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(44, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 214  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(45, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 216  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(46, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 215  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(47, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 1  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(48, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 123  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(49, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 23  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(50, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 12  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(51, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 11  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(52, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 22  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(53, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 181  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(54, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 137  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(55, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 138  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(56, '2012-10-05 05:43:04', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 139  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(57, '2012-10-05 05:43:05', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 140  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(58, '2012-10-05 05:43:05', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 42  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(59, '2012-10-05 05:43:05', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 5  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(60, '2012-10-05 05:43:05', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 44  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(61, '2012-10-05 05:43:05', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 9  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(62, '2012-10-05 05:43:07', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=41&acao_adm=usuario_ambiente_adm&acao=criado&_id_usuario_tipo=1'),
+(63, '2012-10-05 05:43:11', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(64, '2012-10-05 05:43:30', 1, 'Alan', 'Edição do ambiente: sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(65, '2012-10-05 05:44:31', 1, 'Alan', 'Inserção de novo ambiente: menu_menu.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(66, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 209  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(67, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 153  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(68, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 154  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(69, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 155  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(70, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 156  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(71, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 213  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(72, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 218  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(73, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 217  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(74, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 28  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(75, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 17  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(76, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 32  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(77, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 37  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(78, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 29  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(79, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 26  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(80, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 35  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(81, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 30  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(82, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 36  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(83, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 219  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(84, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 220  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(85, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 187  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(86, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 188  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(87, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 189  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(88, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 190  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(89, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 214  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(90, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 216  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(91, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 215  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(92, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 1  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(93, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 123  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(94, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 23  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(95, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 12  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(96, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 11  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(97, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 22  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(98, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 181  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(99, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 137  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(100, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 138  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(101, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 139  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(102, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 140  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(103, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 42  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(104, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 5  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(105, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 44  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(106, '2012-10-05 05:44:52', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 9  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(107, '2012-10-05 05:45:14', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=41&acao_adm=usuario_ambiente_adm&acao=criado&_id_usuario_tipo=1'),
+(108, '2012-10-05 05:45:22', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php?p=a'),
+(109, '2012-10-05 06:37:00', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(110, '2012-10-05 07:20:24', 1, 'Alan', 'Inserção de novo Menu: <b>LOREN ISUM 1</b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(111, '2012-10-05 07:35:45', 1, 'Alan', 'Edição do Menu: LOREN ISUM 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(112, '2012-10-05 07:35:54', 1, 'Alan', 'Edição do Menu: LOREN ISUM 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(113, '2012-10-05 07:36:03', 1, 'Alan', 'Edição do Menu: LOREN ISUM 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(114, '2012-10-05 07:38:46', 1, 'Alan', 'Inserção de novo Menu: <b></b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(115, '2012-10-05 07:38:50', 1, 'Alan', 'Exclusão do Menu: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=menu_site_adm&layout=lista&msg=7'),
+(116, '2012-10-05 07:39:28', 1, 'Alan', 'Inserção de novo Menu: <b></b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(117, '2012-10-05 07:39:32', 1, 'Alan', 'Exclusão do Menu: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=menu_site_adm&layout=lista&msg=7'),
+(118, '2012-10-05 07:42:19', 1, 'Alan', 'Edição do Menu: LOREN ISUM 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(119, '2012-10-08 12:06:50', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(120, '2012-10-08 12:15:31', 1, 'Alan', 'Edição do Menu: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(121, '2012-10-08 12:16:04', 1, 'Alan', 'Inserção de novo Menu: <b>SERVIÇOS</b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(122, '2012-10-08 12:16:35', 1, 'Alan', 'Inserção de novo Menu: <b>CONTATO</b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(123, '2012-10-08 01:33:57', 1, 'Alan', 'Exclusão do ambiente: 190.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=ambiente_adm&layout=lista'),
+(124, '2012-10-08 01:34:03', 1, 'Alan', 'Exclusão do ambiente: 189.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(125, '2012-10-08 01:34:10', 1, 'Alan', 'Exclusão do ambiente: 188.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(126, '2012-10-08 01:34:24', 1, 'Alan', 'Exclusão do ambiente: 187.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(127, '2012-10-08 01:34:35', 1, 'Alan', 'Exclusão do ambiente: 213.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(128, '2012-10-08 01:34:56', 1, 'Alan', 'Exclusão do ambiente: 215.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(129, '2012-10-08 01:35:04', 1, 'Alan', 'Exclusão do ambiente: 216.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(130, '2012-10-08 01:35:10', 1, 'Alan', 'Exclusão do ambiente: 214.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(131, '2012-10-08 01:35:19', 1, 'Alan', 'Exclusão do ambiente: 217.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(132, '2012-10-08 01:35:33', 1, 'Alan', 'Exclusão do ambiente: 218.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&msg=8&layout=lista'),
+(133, '2012-10-08 01:39:51', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php?p=a'),
+(134, '2012-10-08 01:42:06', 1, 'Alan', 'Inserção de novo ambiente: categoria.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(135, '2012-10-08 01:42:23', 1, 'Alan', 'Edição do ambiente: sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(136, '2012-10-08 01:44:05', 1, 'Alan', 'Inserção de novo ambiente: materia.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(137, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 209  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(138, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 221  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(139, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 153  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(140, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 154  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(141, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 155  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(142, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 156  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(143, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 28  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(144, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 17  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(145, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 32  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(146, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 37  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(147, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 29  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(148, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 26  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(149, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 35  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(150, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 30  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(151, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 36  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(152, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 222  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(153, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 219  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(154, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 220  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(155, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 1  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(156, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 123  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(157, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 23  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(158, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 12  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(159, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 11  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(160, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 22  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(161, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 181  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(162, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 137  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(163, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 138  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(164, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 139  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(165, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 140  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(166, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 42  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(167, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 5  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(168, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 44  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(169, '2012-10-08 01:44:37', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 9  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(170, '2012-10-08 01:44:43', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=41&acao_adm=usuario_ambiente_adm&acao=criado&_id_usuario_tipo=1'),
+(171, '2012-10-08 01:44:47', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(172, '2012-10-08 06:22:39', 1, 'Alan', 'Inserção de uma nova materia: Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(173, '2012-10-08 06:33:44', 1, 'Alan', 'Inserção de uma nova materia: Teste Materia 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(174, '2012-10-08 06:39:54', 1, 'Alan', 'Edição da matéria: Teste Materia 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=3&acao=editar&layout=form&acao_adm=materia_adm'),
+(175, '2012-10-08 06:44:11', 1, 'Alan', 'Inserção de uma nova materia: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(176, '2012-10-08 06:44:26', 1, 'Alan', 'Edição da matéria: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=materia_adm'),
+(177, '2012-10-08 06:49:55', 1, 'Alan', 'Inserção de uma nova materia: sdfs.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(178, '2012-10-08 06:50:00', 1, 'Alan', 'Exclusão da Matéria: 5.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&layout=lista'),
+(179, '2012-10-08 07:42:44', 1, 'Alan', 'Edição da matéria: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=materia_adm'),
+(180, '2012-10-09 01:02:03', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(181, '2012-10-09 02:47:07', 1, 'Alan', 'Inserção de uma nova materia: Loren hipsum enorem.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(182, '2012-10-09 02:47:24', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=6&acao=editar&layout=form&acao_adm=materia_adm'),
+(183, '2012-10-09 02:47:47', 1, 'Alan', 'Edição da matéria: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=materia_adm'),
+(184, '2012-10-09 02:48:28', 1, 'Alan', 'Inserção de uma nova materia: Loren hipsum enorem 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(185, '2012-10-09 02:48:49', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=7&acao=editar&layout=form&acao_adm=materia_adm'),
+(186, '2012-10-09 02:49:16', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=7&acao=editar&layout=form&acao_adm=materia_adm'),
+(187, '2012-10-09 02:50:00', 1, 'Alan', 'Inserção de uma nova materia: Loren hipsum enorem 3.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(188, '2012-10-09 02:50:57', 1, 'Alan', 'Inserção de uma nova materia: Loren hipsum enorem 4.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(189, '2012-10-09 02:55:20', 1, 'Alan', 'Inserção de uma nova materia: Loren hipsum enorem 5.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(190, '2012-10-09 02:55:36', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 4.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=9&acao=editar&layout=form&acao_adm=materia_adm'),
+(191, '2012-10-09 02:55:47', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 3.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=8&acao=editar&layout=form&acao_adm=materia_adm'),
+(192, '2012-10-09 02:56:58', 1, 'Alan', 'Inserção de uma nova materia: Loren hipsum enorem 6.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=materia_adm&acao=nova&layout=form'),
+(193, '2012-10-09 02:57:12', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 6.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=11&acao=editar&layout=form&acao_adm=materia_adm'),
+(194, '2012-10-09 07:23:00', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(195, '2012-10-09 07:27:36', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 6.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=11&acao=editar&layout=form&acao_adm=materia_adm'),
+(196, '2012-10-09 07:53:53', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 6.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=11&acao=editar&layout=form&acao_adm=materia_adm'),
+(197, '2012-10-09 08:21:54', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(198, '2012-10-09 08:22:46', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(199, '2012-10-09 08:23:21', 1, 'Alan', 'Inserção de novo ambiente: conteudo.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(200, '2012-10-09 08:24:03', 1, 'Alan', 'Inserção de novo ambiente: conteudo.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(201, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 209  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(202, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 221  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(203, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 224  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(204, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 223  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(205, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 153  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(206, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 154  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(207, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 155  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(208, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 156  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(209, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 28  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(210, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 17  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(211, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 32  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(212, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 37  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(213, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 29  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(214, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 26  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(215, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 35  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(216, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 30  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(217, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 36  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(218, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 222  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(219, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 219  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(220, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 220  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(221, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 1  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(222, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 123  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(223, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 23  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(224, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 12  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(225, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 11  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(226, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 22  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(227, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 181  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(228, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 137  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(229, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 138  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(230, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 139  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(231, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 140  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(232, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 42  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(233, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 5  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(234, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 44  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(235, '2012-10-09 08:24:17', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 9  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(236, '2012-10-09 08:24:37', 1, 'Alan', 'Edição do ambiente: conteudo_pagina.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=224&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(237, '2012-10-09 08:24:39', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&layout=lista&id=224&msg=1'),
+(238, '2012-10-09 08:24:42', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(239, '2012-10-09 08:25:22', 1, 'Alan', 'Edição do ambiente: conteudo.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=223&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(240, '2012-10-09 08:27:23', 1, 'Alan', 'Edição do ambiente: conteudo_pagina.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=224&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(241, '2012-10-09 08:57:31', 1, 'Alan', 'Edição da página: Sobre a King 55.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=14&acao=editar&layout=form&acao_adm=pagina_adm'),
+(242, '2012-10-10 12:23:35', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(243, '2012-10-10 12:43:03', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=17&acao=editar&layout=form&acao_adm=categoria_adm');
+INSERT INTO `shopp_garden_tbl_auditoria` (`id`, `data_hora`, `usuario_id`, `nome`, `acao`, `ip`, `partida`) VALUES
+(244, '2012-10-10 12:44:48', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=17&acao=editar&layout=form&acao_adm=categoria_adm'),
+(245, '2012-10-10 12:45:02', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=18&acao=editar&layout=form&acao_adm=categoria_adm'),
+(246, '2012-10-10 12:45:05', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 3.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=19&acao=editar&layout=form&acao_adm=categoria_adm'),
+(247, '2012-10-10 12:45:06', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 3.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=19&acao=editar&layout=form&acao_adm=categoria_adm'),
+(248, '2012-10-10 12:45:09', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 4.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=20&acao=editar&layout=form&acao_adm=categoria_adm'),
+(249, '2012-10-10 12:45:12', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 5.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=21&acao=editar&layout=form&acao_adm=categoria_adm'),
+(250, '2012-10-10 12:45:16', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 6.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=22&acao=editar&layout=form&acao_adm=categoria_adm'),
+(251, '2012-10-10 12:45:19', 1, 'Alan', 'Edição da categoria para produtos: LOREN ISUM 7.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=24&acao=editar&layout=form&acao_adm=categoria_adm'),
+(252, '2012-10-10 01:28:48', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 5.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=10&acao=editar&layout=form&acao_adm=materia_adm'),
+(253, '2012-10-10 01:45:51', 1, 'Alan', 'Edição da página: Rodape.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=15&acao=editar&layout=form&acao_adm=pagina_adm'),
+(254, '2012-10-10 01:45:56', 1, 'Alan', 'Edição da página: Sobre a King 55.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=14&acao=editar&layout=form&acao_adm=pagina_adm'),
+(255, '2012-10-10 01:53:36', 1, 'Alan', 'Edição da página: Sobre a King 55.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=14&acao=editar&layout=form&acao_adm=pagina_adm'),
+(256, '2012-10-10 01:53:41', 1, 'Alan', 'Inserção de nova página: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=pagina_adm&acao=nova&layout=form'),
+(257, '2012-10-10 01:55:04', 1, 'Alan', 'Inserção de nova página: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=pagina_adm&acao=nova&layout=form'),
+(258, '2012-10-10 02:01:01', 1, 'Alan', 'Edição do Menu: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(259, '2012-10-10 02:02:01', 1, 'Alan', 'Exclusão do Menu: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?id=15&acao=excluir&acao_adm=pagina_adm'),
+(260, '2012-10-10 03:54:04', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(261, '2012-10-10 05:06:59', 1, 'Alan', 'Inserção de novo Album: Pinit.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=album_adm&acao=nova&layout=form'),
+(262, '2012-10-10 05:08:04', 1, 'Alan', 'Edição do Album: Pinit.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=102&acao=editar&layout=form&acao_adm=album_adm'),
+(263, '2012-10-10 05:08:52', 1, 'Alan', 'Edição do Album: Pinit.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=102&acao=editar&layout=form&acao_adm=album_adm'),
+(264, '2012-10-10 05:47:50', 1, 'Alan', 'Inserção de novo Menu: <b>NEWSLETTER</b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(265, '2012-10-10 05:50:36', 1, 'Alan', 'Inserção de novo Album: Facebook.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=album_adm&acao=nova&layout=form'),
+(266, '2012-10-10 05:51:33', 1, 'Alan', 'Inserção de novo Menu: <b>Facebook</b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(267, '2012-10-10 05:51:47', 1, 'Alan', 'Edição do Menu: FACEBOOK.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=7&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(268, '2012-10-10 06:37:51', 1, 'Alan', 'Inserção de novo Menu: <b>PINIT</b>.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=menu_site_adm&acao=nova&layout=form'),
+(269, '2012-10-10 07:05:08', 1, 'Alan', 'Inserção de nova página: Shopping Garden.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=pagina_adm&acao=nova&layout=form'),
+(270, '2012-10-10 07:08:22', 1, 'Alan', 'Edição do Menu: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(271, '2012-10-10 07:13:11', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(272, '2012-10-10 07:24:41', 1, 'Alan', 'Inserção de novo ambiente: empresa.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=ambiente_adm&acao=nova&layout=form'),
+(273, '2012-10-10 07:24:47', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&acao=&layout=lista&msg=7'),
+(274, '2012-10-10 07:24:53', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(275, '2012-10-10 07:25:13', 1, 'Alan', 'Edição do ambiente: empresa.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=225&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(276, '2012-10-10 07:25:18', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&layout=lista&id=225&msg=1'),
+(277, '2012-10-10 07:25:23', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(278, '2012-10-10 07:31:42', 1, 'Alan', 'Edição do ambiente: empresa.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=225&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(279, '2012-10-10 07:31:46', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=ambiente_adm&layout=lista&id=225&msg=1'),
+(280, '2012-10-10 07:31:50', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(281, '2012-10-10 07:32:16', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(282, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 209  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(283, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 221  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(284, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 223  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(285, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 153  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(286, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 154  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(287, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 155  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(288, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 156  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(289, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 224  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(290, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 225  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(291, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 28  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(292, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 17  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(293, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 32  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(294, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 37  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(295, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 29  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(296, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 26  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(297, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 35  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(298, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 30  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(299, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 36  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(300, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 222  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(301, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 219  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(302, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 220  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(303, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 1  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(304, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 123  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(305, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 23  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(306, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 12  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(307, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 11  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(308, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 22  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(309, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 181  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(310, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 137  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(311, '2012-10-10 07:32:40', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 138  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(312, '2012-10-10 07:32:41', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 139  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(313, '2012-10-10 07:32:41', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 140  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(314, '2012-10-10 07:32:41', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 42  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(315, '2012-10-10 07:32:41', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 5  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(316, '2012-10-10 07:32:41', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 44  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(317, '2012-10-10 07:32:41', 1, 'Alan', 'Inserção de nova permissão: Ambiente: 9  - Usuario Tipo: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=usuario_ambiente_adm&layout=lista'),
+(318, '2012-10-10 07:32:46', 1, 'Alan', 'Saiu do sistema: 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=41&acao_adm=usuario_ambiente_adm&acao=criado&_id_usuario_tipo=1'),
+(319, '2012-10-10 07:32:51', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(320, '2012-10-10 07:33:25', 1, 'Alan', 'Edição do ambiente: empresa.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=225&acao=editar&layout=form&acao_adm=ambiente_adm'),
+(321, '2012-10-10 07:59:08', 1, 'Alan', 'Inserção de nova página: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=empresa_adm&acao=nova&layout=form'),
+(322, '2012-10-10 08:01:24', 1, 'Alan', 'Inserção de nova Empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=empresa_adm&acao=nova&layout=form'),
+(323, '2012-10-10 08:12:25', 1, 'Alan', 'Edição da empresa: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(324, '2012-10-10 08:16:20', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(325, '2012-10-10 08:17:12', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(326, '2012-10-10 09:09:42', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(327, '2012-10-11 12:17:24', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(328, '2012-10-11 12:17:20', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(329, '2012-10-11 12:17:41', 1, 'Alan', 'Edição do Menu: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=1&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(330, '2012-10-11 12:18:05', 1, 'Alan', 'Edição da página: Shopping Garden.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=18&acao=editar&layout=form&acao_adm=pagina_adm'),
+(331, '2012-10-11 12:18:23', 1, 'Alan', 'Edição da página: Shopping Garden.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=18&acao=editar&layout=form&acao_adm=pagina_adm'),
+(332, '2012-10-11 12:28:18', 1, 'Alan', 'Inserção de nova página: SERVIÇOS.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=pagina_adm&acao=nova&layout=form'),
+(333, '2012-10-11 12:28:35', 1, 'Alan', 'Edição do Menu: SERVIÇOS.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(334, '2012-10-11 12:29:24', 1, 'Alan', 'Edição da página: SERVIÇOS.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=19&acao=editar&layout=form&acao_adm=pagina_adm'),
+(335, '2012-10-11 12:29:45', 1, 'Alan', 'Edição da página: SERVIÇOS.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=19&acao=editar&layout=form&acao_adm=pagina_adm'),
+(336, '2012-10-11 12:30:25', 1, 'Alan', 'Edição da página: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=18&acao=editar&layout=form&acao_adm=pagina_adm'),
+(337, '2012-10-11 01:24:20', 1, 'Alan', 'Inserção de novo tipo de usuário: Newsletter.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=usuario_tipo_adm&acao=novo&layout=form'),
+(338, '2012-10-11 01:49:01', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(339, '2012-10-11 01:53:26', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(340, '2012-10-11 06:08:37', 1, 'Alan', 'Edição da matéria: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=materia_adm'),
+(341, '2012-10-11 06:11:46', 1, 'Alan', 'Edição da matéria: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=materia_adm'),
+(342, '2012-10-11 07:03:40', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(343, '2012-10-11 07:04:10', 1, 'Alan', 'Edição da matéria: Loren hipsum enorem 6.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=11&acao=editar&layout=form&acao_adm=materia_adm'),
+(344, '2012-10-11 07:42:46', 1, 'Alan', 'Edição da matéria: Teste Materia 1.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=4&acao=editar&layout=form&acao_adm=materia_adm'),
+(345, '2012-10-11 07:44:02', 1, 'Alan', 'Edição da matéria: Teste Materia 2.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=3&acao=editar&layout=form&acao_adm=materia_adm'),
+(346, '2012-10-15 12:00:37', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(347, '2012-10-15 12:52:04', 1, 'Alan', 'Acessou o sistema.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/login.php'),
+(348, '2012-10-15 01:02:44', 1, 'Alan', 'Inserção de nova Empresa: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=5&acao_adm=empresa_adm&acao=nova&layout=form'),
+(349, '2012-10-15 01:26:11', 1, 'Alan', 'Edição do Menu: CONTATO.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=5&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(350, '2012-10-15 01:26:32', 1, 'Alan', 'Edição da página: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=18&acao=editar&layout=form&acao_adm=pagina_adm'),
+(351, '2012-10-15 01:26:50', 1, 'Alan', 'Edição da página: SERVIÇOS.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=19&acao=editar&layout=form&acao_adm=pagina_adm'),
+(352, '2012-10-15 01:27:40', 1, 'Alan', 'Edição do Menu: CONTATO.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=5&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(353, '2012-10-15 01:28:09', 1, 'Alan', 'Edição do Menu: CONTATO.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&_id=5&acao=editar&layout=form&acao_adm=menu_site_adm'),
+(354, '2012-10-15 01:30:02', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(355, '2012-10-15 01:34:16', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(356, '2012-10-15 01:34:26', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(357, '2012-10-15 01:34:47', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(358, '2012-10-15 01:38:01', 1, 'Alan', 'Edição da empresa: SHOPPING GARDEN.', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=3&id=1&acao=editar&layout=form&acao_adm=empresa_adm'),
+(359, '2012-10-15 06:49:44', 1, 'Alan', 'Exclusão da imagem: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?msg=2&acao_adm=imagem_adm&layout=lista'),
+(360, '2012-10-15 06:49:52', 1, 'Alan', 'Exclusão da imagem: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=imagem_adm&msg=8&layout=lista'),
+(361, '2012-10-15 06:50:17', 1, 'Alan', 'Exclusão da imagem: .', '127.0.0.1', 'http://localhost:88/shopping_garden/gc/index.php?acao_adm=imagem_adm&msg=8&layout=lista');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_backup`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_backup` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(11) NOT NULL,
+  `data_hora` datetime NOT NULL,
+  `arquivo` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_backup`
+--
+
+INSERT INTO `shopp_garden_tbl_backup` (`id`, `id_usuario`, `data_hora`, `arquivo`) VALUES
+(2, 1, '2012-07-20 20:58:36', 'backup_shopp_garden_2012_07_20_20_58_36.sql');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_categoria`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_categoria` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) NOT NULL,
+  `descricao` varchar(2000) DEFAULT NULL,
+  `estado` varchar(1) NOT NULL,
+  `data_hora` datetime NOT NULL,
+  `ordem` varchar(1) DEFAULT NULL,
+  `chamada_categoria` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=49 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_categoria`
+--
+
+INSERT INTO `shopp_garden_tbl_categoria` (`id`, `nome`, `descricao`, `estado`, `data_hora`, `ordem`, `chamada_categoria`) VALUES
+(17, 'LOREN ISUM 1', '												', 'a', '2012-05-11 10:46:01', 'a', 'loren_isum_1'),
+(18, 'LOREN ISUM 2', '																', 'a', '2012-05-11 10:48:26', 'b', 'loren_isum_2'),
+(19, 'LOREN ISUM 3', '																				', 'a', '2012-05-11 10:49:00', 'e', 'loren_isum_3'),
+(20, 'LOREN ISUM 4', '																				', 'a', '2012-05-11 10:49:18', 'd', 'loren_isum_4'),
+(21, 'LOREN ISUM 5', '												', 'a', '2012-05-11 10:51:29', 'f', 'loren_isum_5'),
+(22, 'LOREN ISUM 6', '												', 'a', '2012-05-11 10:51:51', 'c', 'loren_isum_6'),
+(24, 'LOREN ISUM 7', '								', 'a', '2012-06-25 17:31:23', 'a', 'loren_isum_7');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_categoria_produto`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_categoria_produto` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_produto` int(11) NOT NULL,
+  `id_categoria` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_categoria_produto`
+--
+
+INSERT INTO `shopp_garden_tbl_categoria_produto` (`id`, `id_produto`, `id_categoria`) VALUES
+(30, 3, 19),
+(29, 3, 20),
+(28, 4, 24),
+(10, 6, 19),
+(14, 7, 20),
+(19, 8, 21),
+(18, 9, 19),
+(24, 10, 17),
+(27, 11, 22);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_cron_job`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_cron_job` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) DEFAULT NULL,
+  `estado` char(1) DEFAULT NULL,
+  `atributo_01` varchar(250) DEFAULT NULL,
+  `atributo_02` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_cron_job`
+--
+
+INSERT INTO `shopp_garden_tbl_cron_job` (`id`, `nome`, `estado`, `atributo_01`, `atributo_02`) VALUES
+(1, 'Emai Marketing', 'a', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_email`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_email` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(150) DEFAULT NULL,
+  `email` varchar(120) NOT NULL,
+  `data` datetime NOT NULL,
+  `tipo` char(1) NOT NULL,
+  `id_projeto` int(3) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_email`
+--
+
+INSERT INTO `shopp_garden_tbl_email` (`id`, `nome`, `email`, `data`, `tipo`, `id_projeto`) VALUES
+(1, '', 'abelaopereiramg@yahoo.com.br', '2012-07-19 18:03:56', 'a', 1),
+(2, '', 'adm@bellsprodutos.com.br', '2012-07-19 18:03:56', 'a', 1),
+(3, '', 'administracaocampinas@r7.com', '2012-07-19 18:03:56', 'a', 1),
+(4, '', 'adrianomb_23@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(5, '', 'advomoura@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(6, '', 'aeverton90@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(7, '', 'alain_mcf@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(8, '', 'alan@kerema.com.br', '2012-07-19 18:03:56', 'a', 1),
+(9, '', 'alexpiranga@yahoo.com.br', '2012-07-19 18:03:56', 'a', 1),
+(10, '', 'alfabarracompras@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(11, '', 'alfreixo@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(12, '', 'allan-albert@bol.com.br', '2012-07-19 18:03:56', 'a', 1),
+(13, '', 'amands_c@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(14, '', 'amarulae@gmail.com', '2012-07-19 18:03:56', 'a', 1),
+(15, '', 'ana@alliz.com.br', '2012-07-19 18:03:56', 'a', 1),
+(16, '', 'anderlindinhos@ig.com.br', '2012-07-19 18:03:56', 'a', 1),
+(17, '', 'andersonalmeidalima@yahoo.com.br', '2012-07-19 18:03:56', 'a', 1),
+(18, '', 'andreamartinelli@ig.com.br', '2012-07-19 18:03:56', 'a', 1),
+(19, '', 'andrezaros@uol.com.br', '2012-07-19 18:03:56', 'a', 1),
+(20, '', 'angelagallohirota@yahoo.com.br', '2012-07-19 18:03:56', 'a', 1),
+(21, '', 'carla@hotmail.com', '2012-07-19 18:03:56', 'a', 1),
+(22, '', 'qweqw@awrwe.rt', '2012-07-19 18:18:36', 'm', 1),
+(23, '', 'teste@tes.com', '2012-07-19 18:19:11', 'm', 1),
+(24, '', 'secretariacrescer@hotmail.com', '2012-07-20 13:17:35', 'a', 1),
+(25, '', 'sergioatacadaodaconstrucao@bol.com.br', '2012-07-20 13:17:35', 'a', 1),
+(26, '', 'souzaberaldo@hotmail.com', '2012-07-20 13:17:35', 'a', 1),
+(27, '', 'stoccomo@bol.com.br', '2012-07-20 13:17:35', 'a', 1),
+(28, '', 'sueli@mendesorteg.com.br', '2012-07-20 13:17:35', 'a', 1),
+(29, '', 'thais_garciadafonseca@hotmail.com', '2012-07-20 13:17:35', 'a', 1),
+(30, '', 'trioagapecomvoce@hotmail.com', '2012-07-20 13:17:35', 'a', 1),
+(31, '', 'val-rosana@hotmail.com', '2012-07-20 13:17:35', 'a', 1),
+(32, '', 'valerio-veras@uol.com.br', '2012-07-20 13:17:36', 'a', 1),
+(33, '', 'vanderliazevedo@nutricomercio.com.br', '2012-07-20 13:17:36', 'a', 1),
+(34, '', 'veridianenegri@hotmail.com', '2012-07-20 13:17:36', 'a', 1),
+(35, '', 'vicente.pires@bol.com.br', '2012-07-20 13:17:36', 'a', 1),
+(36, '', 'vilgoulart@yahoo.com.br', '2012-07-20 13:17:36', 'a', 1),
+(37, '', 'wagnerchagas86@gmail.com', '2012-07-20 13:17:36', 'a', 1),
+(38, '', 'wanderley_st5yllos@hotmail.com', '2012-07-20 13:17:36', 'a', 1),
+(39, '', 'william.gouvea@ig.com.br', '2012-07-20 13:17:36', 'a', 1),
+(40, '', 'wlorv@hotmail.com', '2012-07-20 13:17:36', 'a', 1),
+(41, '', 'zeliafelicio@uol.com.br', '2012-07-20 13:17:36', 'a', 1),
+(42, '', 'ctsclick@hotmail.com', '2012-07-20 20:02:59', 'a', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_empresa`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_empresa` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `endereco` varchar(255) NOT NULL,
+  `numero` int(11) NOT NULL,
+  `uf` char(2) NOT NULL,
+  `cidade` varchar(255) NOT NULL,
+  `estado` char(1) NOT NULL,
+  `cep` varchar(255) NOT NULL,
+  `mapa` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_empresa`
+--
+
+INSERT INTO `shopp_garden_tbl_empresa` (`id`, `titulo`, `email`, `endereco`, `numero`, `uf`, `cidade`, `estado`, `cep`, `mapa`) VALUES
+(1, 'SHOPPING GARDEN', 'contato@shoppinggarden.com.br', 'Avenida Heráclito Rolemberg', 1650, 'Av', 'Augusto Franco', 'a', '49030-640', '<iframe width="870" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps/ms?msa=0&msid=217449938612943710652.0004cbc8b6c0907e0035f&ie=UTF8&t=m&ll=-10.961448,-37.077699&spn=0,0&output=embed"></iframe><br /><small>View <a href="https://maps.google.com.br/maps/ms?msa=0&msid=217449938612943710652.0004cbc8b6c0907e0035f&ie=UTF8&t=m&ll=-10.961448,-37.077699&spn=0,0&source=embed" style="color:#0000FF;text-align:left">Shop Garden</a> in a larger map</small>');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_empresa_contato`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_empresa_contato` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_empresa` int(11) NOT NULL,
+  `ddd` int(11) NOT NULL,
+  `numero` varchar(255) NOT NULL,
+  `tipo` varchar(155) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_empresa_contato`
+--
+
+INSERT INTO `shopp_garden_tbl_empresa_contato` (`id`, `id_empresa`, `ddd`, `numero`, `tipo`) VALUES
+(3, 1, 79, '3248-1918', ''),
+(8, 1, 11, '91709718', 'Celular');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_imagem`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_imagem` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `descricao` varchar(250) DEFAULT NULL,
+  `estado` char(1) DEFAULT NULL,
+  `destaque` char(1) DEFAULT NULL,
+  `id_album` int(3) DEFAULT NULL,
+  `url` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=48 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_imagem`
+--
+
+INSERT INTO `shopp_garden_tbl_imagem` (`id`, `nome`, `descricao`, `estado`, `destaque`, `id_album`, `url`) VALUES
+(1, 'sem_imagem.png', 'Sem Imagem', 'a', 's', 1, NULL),
+(29, 'produto_0171.png', 'Foto da galeria dos produtos.', 'a', 's', 71, ''),
+(32, 'produto_0778.png', 'Foto da galeria dos produtos.', 'a', 's', 78, 'www.google.com'),
+(33, 'produto_0184.png', 'Foto da galeria dos produtos.', 'a', 's', 84, ''),
+(34, 'produto_0887.png', 'Foto da galeria dos produtos.', 'a', 's', 87, ''),
+(35, 'produto_0188.png', 'Foto da galeria dos produtos.', 'a', 's', 88, ''),
+(36, 'produto_0794.png', 'Foto da galeria dos produtos.', 'a', 's', 94, ''),
+(37, 'produto_0695.png', 'Foto da galeria dos produtos.', 'a', 's', 95, ''),
+(38, 'produto_0496.png', 'Foto da galeria dos produtos.', 'a', 's', 96, ''),
+(39, 'produto_0297.png', 'Foto da galeria dos produtos.', 'a', 's', 97, ''),
+(40, 'produto_0275.png', 'Foto da galeria dos produtos.', 'a', 's', 75, 'www.google.com'),
+(41, 'produto_0598.png', 'Foto da galeria dos produtos.', 'a', 's', 98, ''),
+(42, 'produto_0399.png', 'Foto da galeria dos produtos.', 'a', 's', 99, ''),
+(45, 'red_social_02.png', NULL, 'a', NULL, 103, NULL),
+(46, 'red_social_01.png', NULL, 'a', NULL, 102, NULL),
+(47, 'foto104.jpg', 'Foto da galeria dos produtos.', 'a', 's', 104, '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_mensagem`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_mensagem` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  `corpo` varchar(900) DEFAULT NULL,
+  `tipo` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=190 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_mensagem`
+--
+
+INSERT INTO `shopp_garden_tbl_mensagem` (`id`, `nome`, `corpo`, `tipo`) VALUES
+(1, 'Sucesso', 'Seu item foi editado com êxito.', 'msg_sucesso'),
+(2, 'Edição exclusão de itens', 'Use a lista abaixo para editar ou excluir os itens desejados.', 'msg_neutra'),
+(3, 'Edição de item', 'Edite nesta área, o item que você escolheu anteriormente.', 'msg_neutra'),
+(4, 'Resultado ', 'Abaixo está(ão) listado(s) o(s) resultado(s) de sua busca.', 'msg_neutra'),
+(5, 'Novo item', 'Use o formulário abaixo para criar seu novo item.', 'msg_neutra'),
+(6, 'Bloqueado', 'Seu usuário não tem permissão de acesso a esta página. Se achar que algo esta errado favor contactar-se com o administrador do site.', 'msg_aviso'),
+(7, 'Sucesso', 'Seu item foi criado com êxito.', 'msg_sucesso'),
+(8, 'Sucesso', 'Seu item foi eliminado com êxito.', 'msg_sucesso'),
+(9, 'sistema_usuario_novo', 'index.php?acao_adm=usuario_adm&acao=novo&layout=form', 'msg_neutra'),
+(10, 'Permissões', 'index.php?acao_adm=usuario_permissao_adm', 'msg_neutra'),
+(11, 'Senhas diferentes', 'Para que você possa alterar sua senha deve digitar senhas iguais nos dois campos.', 'msg_neutra'),
+(12, 'enviar arquivo', 'Clique no botão &quot;Selecionar arquivo...&quot; selecione uma imagem e logo clique no botão &quot;enviar&quot; para salvar sua imagem.', 'msg_neutra'),
+(13, 'Auditoria', 'As 100 últimas ações realizadas no banco de dados estão listadas abaixo.', 'msg_neutra'),
+(14, 'Sem registros', 'Não existem registros cadastrados. Por favor tente outra busca.', 'msg_aviso'),
+(15, 'Aviso', 'Este albúm possue imagem(ens). A(s) imagem(ens) será(ão) deletada(s).', 'msg_neutra'),
+(16, 'Aviso', 'Esta categoria possue vídeo(s) você precisa excluir-lo (s) primeiro antes de deletar a categoria.', 'msg_aviso'),
+(17, 'Seu álbum!', 'Este é seu álbum atual. Olhe com atenção, pois a(s) imagem(ns) pode(m) ser da cor de fundo da página ou transparente.', 'msg_neutra'),
+(18, 'Resultado da busca', 'Resultado da busca pelo termo selecionado.', 'msg_neutra'),
+(20, 'Busca de usuário', 'Digite no campo abaixo o nome ou parte do nome do usuário desejado.', 'msg_neutra'),
+(21, 'Bem-vindo', 'Bem-vindo ao Sistema de Gestão.', 'msg_neutra'),
+(23, 'Alterar senha', 'Altere sua senha nesta área.', 'msg_neutra'),
+(24, 'Campos vazios', 'Preencha ambos os campos para a alteração de senha.', 'msg_neutra'),
+(25, 'Senha não enviada', 'Por favor refaça o processo de recuperação de senha.', 'msg_neutra'),
+(26, 'Campo vazio', 'Ambos os campos devem ser preenchidos para alteração de senha.', 'msg_neutra'),
+(28, 'Senha Enviada', 'Obrigado por nos contatar.<br>Sua senha foi enviada para o e-mail registrado em nossa base de dados.', 'msg_neutra'),
+(29, 'Cadastro de usuário', 'Use o formulário abaixo para se cadastrar.', 'msg_neutra'),
+(30, 'Edição de dados', 'Use os campos abaixo para editar seus dados.', 'msg_neutra'),
+(31, 'CPF existente', 'Este cpf já está cadastrado em nosso sistema.', 'msg_neutra'),
+(32, 'Campos vazios', 'Por favor preencher todos os campos obrigatórios.', 'msg_aviso'),
+(33, 'Senhas diferentes', 'Os campos de senha e redigitar senha devem ser iguais.', 'msg_aviso'),
+(35, 'Galerias', 'Clique nos links abaixo para ver as imagens das galerias.', 'msg_neutra'),
+(36, 'Galeria vazia!', 'Nenhuma foto cadastrada no momento.', 'msg_aviso'),
+(37, 'Galeria', 'Aguarde um momento enquanto as miniaturas são carregadas, após isso basta clicar numa delas para vê-la ampliada.', 'msg_neutra'),
+(38, 'Galeria vazia!', 'Nenhum álbum no momento.', 'msg_aviso'),
+(39, 'Vídeos', 'Clique nos links abaixo para ver os vídeos das categorias.', 'msg_neutra'),
+(40, 'Contatos', 'Para entrar em contato com a empresa.', 'msg_neutra'),
+(41, 'Permissões', 'Selecione um usuário para modificar suas permissões.', 'msg_neutra'),
+(42, 'Sem categorias', 'Não existe nenhuma categoria ativada no momento.', 'msg_aviso'),
+(43, 'Categoria vazia', 'Esta categoria não possue vídeos cadastrados no momento.', 'msg_aviso'),
+(44, 'Usuário existente', 'Este usuário já existe no sistema, por favor digite outro e-mail.', 'msg_aviso'),
+(45, 'Pessoa com filhos', 'Está pessoa tem filhos. Para ser excluída é necessário que seus filhos sejam excluidos primeiro.', 'msg_aviso'),
+(46, 'Botão Existente', 'Este botão não pode ser inserido, pois já existe um com o mesmo nome e local inseridos no banco.', 'msg_aviso'),
+(47, 'Fornecedores', 'Clique nos links abaixo para ir para home do fornecedor.', 'msg_neutra'),
+(48, 'Notícias', 'Abaixo estão as notícias que são destaques desta semana. Confira!', 'msg_neutra'),
+(49, 'Produtos', 'Abaixo estão os produtos que são destaques desta semana. Confira!', 'msg_neutra'),
+(50, 'Páginas', 'Abaixo estão nossas páginas que estão em destaque esta semana. Confira!', 'msg_neutra'),
+(51, 'Home', 'Confira nossos destaques!', 'msg_neutra'),
+(52, 'E-mail Vazio!', 'Por favor preencha o campo de e-mail.', 'msg_aviso'),
+(53, 'Arquivo existente!', 'Este arquivo não pode ser inserido pois já está cadastrado no gestor.', 'msg_aviso'),
+(54, 'Notícias', 'Abaixo estão as notícias desta semana. Confira!', 'msg_neutra'),
+(55, 'Senha enviada!', 'A senha foi enviada com sucesso ao usuário.', 'msg_sucesso'),
+(56, 'Resultado da Enquete', 'Confira aqui o resultado das últimas enquetes.', 'msg_neutra'),
+(57, 'Sucesso', 'Seu voto foi computado com sucesso. Ogrigado.', 'msg_neutra'),
+(58, 'Aviso', 'Você já participou desta enquete.', 'msg_neutra'),
+(59, 'Não foi possível eliminar!', 'O arquivo que você está tentando eliminar está sendo utilizado. É necessário eliminar a referência deste arquivo do gestor.', 'msg_neutra'),
+(60, 'Comentários', 'Deixe seu comentário!', 'msg_neutra'),
+(61, 'Sucesso', 'Sua mensagem foi enviada com êxito.', 'msg_neutra'),
+(63, 'Mapa do Site', 'Use o mapa do site abaixo para rápido acesso às nossas áreas.', 'msg_neutra'),
+(64, 'Enquete', 'Participe da nossa enquete!', 'msg_neutra'),
+(65, 'SELEÇÃO DE FLASHES', 'Para selecionar um flash basta clicar no botão "OK, É ESTE"."', 'msg_neutra'),
+(66, 'EXCLUIR IMAGENS', 'Para excluir um arquivo basta clicar no botão "EXCLUIR ESTA".', 'msg_neutra'),
+(67, 'ESCOLHER IMAGENS', 'Aqui você poderá visualizar todas imagens já disponíveis para a área a qual você está editando.', 'msg_neutra'),
+(68, 'Sem páginas', 'Não existem páginas cadastradas.', 'msg_neutra'),
+(69, 'Obrigado', 'Seu voto foi computado com sucesso.', 'msg_sucesso'),
+(70, 'Portfolio vazio', 'Nenhum portfólio no momento.', 'msg_neutra'),
+(71, 'Portfolio vazio', 'Nenhum serviço no momento.', 'msg_neutra'),
+(72, 'Enquete', 'Participe da nossa enquete!', 'msg_neutra'),
+(73, 'IDENTIFICAÇÃO', '', 'msg_neutra'),
+(74, 'Acesso Negado', 'Seu usuário não tem permissão de acesso a esta página. Se achar que algo está errado favor consultar o administrador.', 'msg_neutra'),
+(75, 'Aviso', 'Você já avaliou este produto.', 'msg_aviso'),
+(76, 'SELEÇÃO DE IMAGENS', 'Para selecionar uma imagem basta clicar no botão "OK, É ESTA" próximo à imagem.', 'msg_neutra'),
+(77, 'Busca de Pessoa', 'Digite no campo abaixo o nome ou parte do nome da pessoa desejada.', 'msg_neutra'),
+(78, 'Páginas disponíveis', 'Selecione abaixo uma das páginas disponíveis para criar seu link.', 'msg_neutra'),
+(79, 'Exclusão de item', 'Selecione na área abaixo o item a ser excluído.', 'msg_neutra'),
+(82, 'Sucesso', 'Senha enviada com sucesso ao usuário.', 'msg_neutra'),
+(83, 'Comentários', 'Atenção: os comentários a seguir são de inteira responsabilidade de seus autores.', 'msg_neutra'),
+(84, 'Erro', 'Senha não enviada ao usuário.', 'msg_neutra'),
+(85, 'Erro', 'Seu registro no nosso newsletter nao foi realizado. Favor tentar novamente mais tarde.', 'msg_neutra'),
+(86, '[categoria_nome]', 'Veja abaixo o vídeo <strong>"[nome]"</strong> da categoria <strong>"[categoria_nome]"</strong>.', 'msg_neutra'),
+(87, 'Registro Newsletter', 'Utilize os campos abaixo para registrar-se no News Letter e receber noticias.', 'msg_neutra'),
+(88, 'Sair do Informativo', 'Para sair da lista e necessário se identificar com o e-mail usado no momento do cadastro. Esta informação se encontra em todos e-mails enviados por esta lista.', 'msg_neutra'),
+(89, 'Arquivo de Mensagens', 'Veja aqui as mensagens ja enviadas ao nossos usuarios.<br /><br />', 'msg_neutra'),
+(90, 'Erro!', 'Problemas com envio de e-mail. Favor utilizar o e-mail  para nos contatar. Para sua comodidade sua mensagem foi recuperada e não será necessário digitá-la novamente: <br />([mensagem])', 'msg_erro'),
+(93, 'EXCLUIR ARQUIVOS', 'Para excluir um arquivo basta clicar no botão que se encontra ao lado do mesmo.', 'msg_neutra'),
+(94, 'Aviso', 'Todos campos devem ser preenchidos.', 'msg_neutra'),
+(95, 'Busca de Produto', 'Digite no campo abaixo o nome ou parte do nome do produto desejado.', 'msg_neutra'),
+(96, 'Erro', 'Por algum motivo sua indicação não pode ser enviada, muito provavlemente por uma instabilidade momentânea. Por favor tente novamente.', 'msg_erro'),
+(97, 'Aviso', 'Favor inserir e-mails válidos.', 'msg_neutra'),
+(98, 'Registro no Informativo', 'Utilize o campo abaixo para registrar-se no nosso Informativo e receber esporadicamente nossos informativos.', 'msg_neutra'),
+(99, 'Indicar', 'Preencha os campos para indicar este site a um amigo.', 'msg_neutra'),
+(100, 'Informativo', 'Este informativo é enviado periodicamente para as pessoas que se cadastrarem em nossas listas. Para se cadastrar, sair da lista ou ver as mensagens já enviadas utilize os links abaixo.', 'msg_neutra'),
+(101, 'Lista geral', 'Abaixo estão listados todos os produtos do site. Clique no nome do produto para ver mais detalhes.', 'msg_neutra'),
+(102, 'Resultado da busca', 'Resultado da busca pela palavra: <strong>[nome]</strong>.<br><br>', 'msg_neutra'),
+(103, 'Nada encontrado', 'Nada encontrado para a palavra: <strong>[nome]</strong>.<br><br>', 'msg_neutra'),
+(104, 'Erro!', 'Não foi possível excluir o arquivo "[arquivo]".', 'msg_neutra'),
+(105, 'Arquivo excluído', 'O arquivo [arquivo] foi excluído com sucesso. <a href="javascript:history.back();">Clique para deletar outra</a>', 'msg_sucesso'),
+(106, 'Erro!', 'O endereço "[info_email]" é inválido. <a href="javascript:history.back()">Clique aqui para tentar novamente.</a>', 'msg_erro'),
+(107, 'Email cadastrado', 'O e-mail "[info_email]" já esta cadastrado em nossa lista.', 'msg_neutra'),
+(108, 'Sucesso', 'O email "[info_email]" foi cadastrado corretamente. Agradecemos sua atenção!', 'msg_neutra'),
+(109, 'E-mail removido', 'O email "[info_email]" foi removido com sucesso de nossa lista.', 'msg_neutra'),
+(110, 'Usuário não encontrado', 'Não foi possível encontrar "[info_email]". Seu email não deve estar em nossa lista. Por favor <a href="javascript:history.go(-1)">tente novamente</a> ou entre em contato conosco.', 'msg_neutra'),
+(112, 'Atenção', 'Não cormecializamos nem divulgamos seu e-mail. Utilizamos exclusivamente para o envio de nosso informativo. No futuro, se desejar sair da nossa lista, volte ao site, abra esta janela, clique no link "Sair da Lista" e siga as instruções para o descadastro.', 'msg_aviso'),
+(113, 'Mensagem Enviada!', 'Mensagem enviada com sucesso para "[dest_nome] - [dest_email]". ', 'msg_sucesso'),
+(114, 'Sucesso', 'Status de envio do arquivo: O arquivo "[arquivo][name]" foi enviado com sucesso!', 'msg_sucesso'),
+(115, 'Erro', 'Status do envio do arquivo: O envio da arquivo "[arquivo][name]" falhou!', 'msg_erro'),
+(116, 'Erro', 'Erro ao tentar se conectar a [server] pelo usuário [usuario]!', 'msg_erro'),
+(118, 'Arquivos', 'Selecione o arquivo desejado para visualização.', 'msg_neutra'),
+(119, 'SELEÇÃO DE ARQUIVOS', 'Para selecionar basta clicar no botão "OK, É ESTE" próximo ao arquivo.', 'msg_neutra'),
+(120, 'Sua imagem!', 'Esta é sua imagem atual. Olhe com atenção pois a imagem pode ser da cor de fundo da página ou transparente.', 'msg_neutra'),
+(121, 'Busca', 'Favor escrever uma palavra ou parte dela.', 'msg_aviso'),
+(122, 'Resultado da Busca', 'Resultados encontrados pela busca por: [busca].', 'msg_neutra'),
+(123, 'Sem registros', 'Nenhum registro encontrado com o termo [busca], favor tentar outra palavra.', 'msg_aviso'),
+(124, 'Produto indisponível', 'Gostaria de ser avisado quando o produto retornar em estoque? Preencha os campos abaixo para ser informado.', 'msg_neutra'),
+(125, 'Aviso', 'O preenchimento dos campos <i>nome</i> e <i>e-mail</i> são obrigatórios!', 'msg_neutra'),
+(126, 'Aviso', 'Email inválido. Favor digita um email válido.', 'msg_neutra'),
+(127, 'Mensagem enviada com sucesso!', 'Você será informado por email assim que o produto estiver disponível. Obrigado!', 'msg_sucesso'),
+(128, 'Você já solicitou este produto!', 'Por favor aguarde que entraremos em contato assim que o produto estiver disponível.', 'msg_neutra'),
+(129, 'Login', 'Login efetuado com sucesso, por favor continue com sua cotação!', 'msg_aviso'),
+(130, 'Cadastro', 'Sr. "[nome]" seu cadastro foi efetuado com sucesso!', 'msg_aviso'),
+(131, 'Alteração', 'Alteração de Endereço', 'msg_aviso'),
+(132, 'Endereços', 'Lista de endereços cadastrados:', 'msg_neutra'),
+(133, 'Adicionar novo endereço', 'Para adicionar outro endereço, utilize o formulário abaixo', 'msg_neutra'),
+(134, 'Edição de Endereço', 'Use os campos abaixo para editar seu endereço.', 'msg_neutra'),
+(135, 'Selecionar endereço', 'Selecione o endereço para onde deseja que seu pedido seja enviado, depois clicar no logo do Pag Seguro para dar continuidade à sua compra.', 'msg_neutra'),
+(136, 'Endereço de entrega', 'Seu pedido será enviado para este endereço.', 'msg_neutra'),
+(137, 'E-mail não encontado', 'não localizamos seu e-mail em nossos cadastros.', 'msg_neutra'),
+(138, 'Senha enviada.', 'Verifique seu e-mail.', 'msg_neutra'),
+(139, 'Carrinho Vazio', 'Seu Carrinho de Compras atual não contém nenhum produto.', 'msg_neutra'),
+(140, 'Aviso', 'O produto <strong>"[nome_produto]"</strong> já está no carrinho!', 'msg_aviso'),
+(141, 'Meu carrinho', 'Produtos no meu carrinho.', 'msg_neutra'),
+(142, 'Aviso', 'Não entregamos mais que 30 quilos. Retire alguns produtos do carrinho e faça uma outra compra.', 'msg_aviso'),
+(143, 'Erro!', 'Para que você possa alterar a quantidade dos produtos deve digitar números inteiros e maiores a zero', 'msg_erro'),
+(144, 'Seus Pedidos', 'Abaixo estão listados todos os pedidos realizados por você, para ver mais detalhes do pedido clicar no número do pedio.', 'msg_neutra'),
+(145, 'Detalhe do Pedido', 'Seguem os dados do pedido selecionado na página anterior. Para voltar à sua lista clique novamente no link ''meus pedidos'' no menu acima.', 'msg_neutra'),
+(146, 'Cadastro efetuado com sucesso!', 'Por favor confirme sua cotação clicando em "Fechar Cotação".', 'msg_aviso'),
+(147, 'Seu pedido foi registrado com sucesso', 'Os produtos adquiridos na loja serão enviados por Sedex dos Correios. A postagem será feita apenas depois da confirmação do pagamento da compra.<br />\r\n<strong>Prazo de entrega:</strong> de 1 a 3 dias úteis após a confirmação do pagamento.', 'msg_sucesso'),
+(148, 'IDENTIFICAÇÃO', 'Por favor identifique-se para ter acesso ao sistema.', 'msg_neutra'),
+(149, 'Edição de Pedidos', 'Use a lista abaixo para editar o status do pedido.', 'msg_neutra'),
+(150, 'Edição de item', 'Edite nesta área o pedido.', 'msg_neutra'),
+(151, 'txt_sobre', 'Mais do que fabricante de cadeiras e mesas plásticas, a Móveis Plásticos Bells é uma empresa diferenciada, sinônimo de qualidade e detsign.\r\n<hr>\r\nSua grande experiência em produtos termo-plásticos e investimentos constantes em pesquisa e tecnologia, transformam os produtos Bells em peças de design que valorizam qualquer ambiente.\r\n<hr>\r\nA praticidade e o preço também são destaques no mercado.', 'msg_index'),
+(152, 'PEDIDOS', 'Selecione uma pessoa para fazer um pedido.', 'msg_neutra'),
+(153, 'Busca de produto', 'Digite no campo abaixo o nome ou parte do nome do produto desejado.', 'msg_neutra'),
+(154, 'Não é possível editar!', 'A quantidade inserida é inferior a quantidade atual disponível em estoque!', 'msg_aviso'),
+(155, 'Não é possível excluir!', 'A quantidade atual disponível em estoque esta no limite!', 'msg_aviso'),
+(156, 'Resumo por empresa', 'Abaixo segue a lista de todas as entradas resumida por empresas.', 'msg_neutra'),
+(157, 'Contas a pagar', 'Abaixo segue a lista de contas a pagar.', 'msg_neutra'),
+(158, 'Contas a receber', 'Abaixo segue a lista de contas a receber.', 'msg_neutra'),
+(159, 'Sua cotação foi registrado com sucesso', 'Um de nossos funcionários entrará em contato com você ', 'msg_neutra'),
+(160, 'Tente novamente.', 'E-mail ou senha incorretos.', 'msg_aviso'),
+(161, 'Baixa dos Pedidos e Pagamentos', 'Use a lista abaixo para dar de Baixa aos pedidos e efetuar os pagamentos dos itens desejados.', 'msg_neutra'),
+(162, 'Sucesso', 'O pedido foi dado de baixa com êxito.', 'msg_sucesso'),
+(163, 'EMAIL existente', 'Este email já está cadastrado em nosso sistema.', 'msg_neutra'),
+(164, 'Performance', 'Abaixo segue a performance do usuário selecionado.', 'msg_neutra'),
+(165, 'Histórico', 'Abaixo segue a lista detalhada do cliente.', 'msg_neutra'),
+(166, 'Não é possível excluir!', 'O usuário que você está tentando eliminar possue pedidos registrados no sistema.', 'msg_erro'),
+(167, 'Gerar Backup do Sistema', 'Utilize essa opção para gerar um backup do banco de dados.', 'msg_neutra'),
+(168, 'Cadastro', 'Seu cadastro foi editado com sucesso!', 'msg_aviso'),
+(169, 'Finalizar cotação', 'Verifique todos os dados antes de finalizar a Cotação.', 'msg_neutra'),
+(170, 'Editar cotação', 'Edite nesta área a Cotação.', 'msg_neutra'),
+(171, 'Dar baixa', 'Edite nesta área o Pedido.', 'msg_neutra'),
+(172, 'Lista de Clientes', 'Abaixo segue a lista de clientes do usuário.', 'msg_neutra'),
+(173, 'Pedido Cancelado', 'O pedido foi cancelado com sucesso.', 'msg_sucesso'),
+(174, 'Não foi possível cadastrar', 'O cliente já está cadastrado no sistema! Por favor entre em contato com o administrador do sistema.', 'msg_aviso'),
+(175, 'Dados duplicados', 'Os dados inseridos já existem no sistema! Por favor digite outro CPF ou E-mail.', 'msg_aviso'),
+(176, 'Contas a pagar', 'Abaixo segue a lista de contas a pagar.', 'msg_neutra'),
+(177, 'enviar arquivo', 'Clique no botão &quot;Selecionar arquivo...&quot; selecione uma música e logo clique no botão &quot;enviar&quot; para salvar sua musica.', 'msg_neutra'),
+(178, 'E-mails já cadastrados!', 'Os e-mails do arquivo já estão cadastrados no banco de dados e não podem ser incluídos novamente.', 'msg_aviso'),
+(179, 'Sucesso!', 'Arquivo com e-mails importado corretamente.', 'msg_sucesso'),
+(180, 'Arquivo não existe!', 'Erro ao importar arquivo, tente novamente por favor.', 'msg_aviso'),
+(182, 'Importar E-mails', 'Selecione um arquivo no formato xls ou xlsx e um projeto por favor.', 'msg_neutra'),
+(183, 'Projeto sem E-mails', 'O Projeto selecionado não possui e-mails cadastrados.', 'msg_aviso'),
+(184, 'Exportar E-mails e Links', 'Selecione abaixo o Projeto e o Quiz desejado.', 'msg_neutra'),
+(185, 'Lista de Arquivos', 'Abaixo encontra-se a lista de arquivos com a quantidade de e-mails importados no sistema.', 'msg_neutra'),
+(186, 'Lista de E-mails', 'Abaixo encontra-se a lista de e-mails por Projeto.', 'msg_neutra'),
+(187, 'Quiz sem Perguntas!', 'O Quiz selecionado não possui Perguntas cadastradas para gerar Relatório.', 'msg_aviso'),
+(188, 'Enquete sem respostas!', 'Nenhum usuário respondeu a enquete selecionada!', 'msg_aviso'),
+(189, 'Seu voto já foi computado!', 'Você já respondeu este Quiz. Obrigado por participar!', 'msg_aviso');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_menu`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) DEFAULT NULL,
+  `ordem` char(2) DEFAULT NULL,
+  `pagina_interna` char(1) DEFAULT NULL COMMENT 'p(pagina),l(link),f(funcao_popup)',
+  `id_pagina` int(11) DEFAULT NULL,
+  `tipo_link` varchar(10) DEFAULT NULL COMMENT '_self _blank',
+  `url` varchar(500) DEFAULT NULL,
+  `funcao_popup` varchar(250) DEFAULT NULL,
+  `estado` char(1) DEFAULT NULL,
+  `id_menu_ambiente` int(11) NOT NULL,
+  `id_album` int(11) DEFAULT NULL,
+  `tipo` char(1) DEFAULT NULL COMMENT 't(texto), i(imagem)',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_menu`
+--
+
+INSERT INTO `shopp_garden_tbl_menu` (`id`, `nome`, `ordem`, `pagina_interna`, `id_pagina`, `tipo_link`, `url`, `funcao_popup`, `estado`, `id_menu_ambiente`, `id_album`, `tipo`) VALUES
+(1, 'SHOPPING GARDEN', 'a', 'p', 18, '_self', '', '', 'a', 1, 0, ''),
+(4, 'SERVIÇOS', 'b', 'p', 19, '_self', '#', '', 'a', 1, 0, ''),
+(5, 'CONTATO', 'c', 'l', 19, '_self', 'http://localhost:88/shopping_garden/contato', '', 'a', 1, 0, ''),
+(6, 'NEWSLETTER', 'a', 'f', 0, '_self', '#', '', 'a', 2, 0, 't'),
+(7, 'FACEBOOK', 'b', 'l', 0, '_blank', 'http://www.facebook.com', '', 'a', 2, 103, 'i'),
+(8, 'PINIT', 'c', 'l', 0, '_blank', 'http://www.pinit.com', '', 'a', 2, 102, 'i');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_menu_ambiente`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_menu_ambiente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_menu_ambiente`
+--
+
+INSERT INTO `shopp_garden_tbl_menu_ambiente` (`id`, `nome`) VALUES
+(1, 'Esquerda topo'),
+(2, 'Direita topo');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_pagina`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_pagina` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(150) DEFAULT NULL,
+  `corpo` text,
+  `data` date DEFAULT NULL,
+  `ordem` char(1) DEFAULT NULL,
+  `formatacao` char(3) DEFAULT NULL,
+  `estado` char(1) DEFAULT NULL,
+  `destaque` char(1) DEFAULT NULL,
+  `olho` varchar(250) DEFAULT NULL,
+  `idioma` char(2) DEFAULT NULL,
+  `id_album` int(3) DEFAULT NULL,
+  `chamado` varchar(250) DEFAULT NULL,
+  `curtir_face` char(1) DEFAULT NULL,
+  `comentario_face` char(1) DEFAULT NULL,
+  `curtir_pinit` char(1) DEFAULT NULL,
+  `google_maps` char(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=20 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_pagina`
+--
+
+INSERT INTO `shopp_garden_tbl_pagina` (`id`, `nome`, `corpo`, `data`, `ordem`, `formatacao`, `estado`, `destaque`, `olho`, `idioma`, `id_album`, `chamado`, `curtir_face`, `comentario_face`, `curtir_pinit`, `google_maps`) VALUES
+(18, 'SHOPPING GARDEN', '<p>&nbsp;O Shopping Garden iniciou suas atividades no mercado com a proposta de atender ao seu cliente com qualidade e efici&ecirc;ncia. Tendo o foco no mercado atacadista e varejista, o Shopping Garden disponibiliza ao mercado viveiros de plantas ex&oacute;ticas, nativas e ornamentais, ambiente agrad&aacute;vel, estacionamento pr&oacute;prio e profissionais qualificados na &aacute;rea de projetos urban&iacute;sticos e paisag&iacute;sticos. Buscando sempre um diferencial competitivo e apostando no profissionalismo e no gerenciamento de alta qualidade, o Shopping Garden projeta e executa projetos que atendem plenamente &agrave;s necessidades do seu cliente .&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><img src="../imagens/galeria/shopp_garden.png" alt="" width="726" height="784" /></p>', '2012-10-15', '', '', 'a', '', '', '', 0, 'shopping_garden', 's', 's', '', 's'),
+(19, 'SERVIÇOS', '<p>O Shopping Garden &eacute; uma das mais conceituadas empresas do ramo existente no estado de Sergipe. A m&atilde;o-de-obra especializada dos arquitetos paisagistas e t&eacute;cnicos agr&iacute;colas d&aacute; aos clientes a certeza de que os produtos e o servi&ccedil;os executados nas obras ser&atilde;o de alta qualidade pois a prioridade da empresa &eacute; sempre satisfazer os clientes priorizando o seu projeto.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<table border="0">\r\n<tbody>\r\n<tr>\r\n<td valign="top">\r\n<p>- Elabora&ccedil;&atilde;o de projetos arquitet&ocirc;nicos;</p>\r\n<p>- Elabora&ccedil;&atilde;o de projetos paisag&iacute;sticos;</p>\r\n<p>- Elabora&ccedil;&atilde;o de projetos urban&iacute;sticos;</p>\r\n<p>- Com&eacute;rcio de vasos em geral;</p>\r\n<p>- Plantas Ornamentais e Frut&iacute;feras;</p>\r\n</td>\r\n<td width="50">&nbsp;</td>\r\n<td valign="top">\r\n<p>- Adubos qu&iacute;micos e org&acirc;nicos;</p>\r\n<p>- Equipamentos para jardinagem;</p>\r\n<p>- Terra vegetal;</p>\r\n<p>- Acess&oacute;rios para jardins.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>\r\n<p><img src="../imagens/galeria/servicos.png" alt="" width="692" height="422" /></p>', '2012-10-15', '', '', 'a', '', '', '', 0, 'servicos', 's', 's', '', 's');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_produto`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_produto` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  `corpo` varchar(6000) DEFAULT NULL,
+  `codigo` varchar(15) DEFAULT NULL,
+  `data` datetime DEFAULT NULL,
+  `estado` char(1) NOT NULL,
+  `ordem` char(1) DEFAULT NULL,
+  `estilo` char(1) DEFAULT NULL,
+  `id_album` int(11) DEFAULT NULL,
+  `id_album_02` int(11) DEFAULT NULL,
+  `id_album_03` int(11) DEFAULT NULL,
+  `id_album_04` int(11) DEFAULT NULL,
+  `chamada_produto` varchar(500) DEFAULT NULL,
+  `url` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_produto`
+--
+
+INSERT INTO `shopp_garden_tbl_produto` (`id`, `nome`, `corpo`, `codigo`, `data`, `estado`, `ordem`, `estilo`, `id_album`, `id_album_02`, `id_album_03`, `id_album_04`, `chamada_produto`, `url`) VALUES
+(4, 'Teste Materia 1', '<p><span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem&nbsp;<span>Loren hipsum enorem</span></span></span></span></span></span></span></span></p>', NULL, '2012-10-11 19:42:46', 'a', 'a', 'g', 88, 0, 0, 0, 'teste_materia_1', ''),
+(3, 'Teste Materia 2', '<p><span>Loren hipsum enorem&nbsp;Loren hipsum enorem</span></p>', NULL, '2012-10-11 19:44:02', 'a', 'b', 'p', 87, 0, 0, 0, 'teste_materia_2', ''),
+(6, 'Loren hipsum enorem', '<p>Loren hipsum enorem</p>', NULL, '2012-10-09 14:47:24', 'a', 'c', 'p', 94, 0, 0, 0, 'loren_hipsum_enorem', ''),
+(7, 'Loren hipsum enorem 2', '<p>Loren hipsum enorem</p>', NULL, '2012-10-09 14:49:16', 'a', 'd', 'p', 95, 0, 0, 0, 'loren_hipsum_enorem_2', ''),
+(8, 'Loren hipsum enorem 3', '<p>Loren hipsum enorem</p>', NULL, '2012-10-09 14:55:47', 'a', 'e', 'p', 96, 0, 0, 0, 'loren_hipsum_enorem_3', ''),
+(9, 'Loren hipsum enorem 4', '<p>Loren hipsum enorem</p>', NULL, '2012-10-09 14:55:36', 'a', 'f', 'p', 97, 0, 0, 0, 'loren_hipsum_enorem_4', ''),
+(10, 'Loren hipsum enorem 5', '<p>Loren hipsum enorem 3</p>', NULL, '2012-10-10 13:28:48', 'a', 'g', 'm', 98, 0, 0, 0, 'loren_hipsum_enorem_5', ''),
+(11, 'Loren hipsum enorem 6', '<p>Loren hipsum enorem&nbsp;</p>', NULL, '2012-10-11 19:04:09', 'a', 'h', 'p', 99, 0, 0, 0, 'loren_hipsum_enorem_6', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_produto_materia`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_produto_materia` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) DEFAULT NULL,
+  `corpo` varchar(6000) DEFAULT NULL,
+  `id_album` int(11) DEFAULT NULL,
+  `id_produto` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=86 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_produto_materia`
+--
+
+INSERT INTO `shopp_garden_tbl_produto_materia` (`id`, `nome`, `corpo`, `id_album`, `id_produto`) VALUES
+(82, '', '<p>testo..</p>', 71, 4),
+(80, '', '<p>teste</p>', 75, 3),
+(83, '', '<p>Loren hipsum enorem</p>', 75, 9),
+(85, '', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>', 101, 11);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_usuario`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_usuario` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(150) NOT NULL,
+  `sobrenome` varchar(150) NOT NULL,
+  `nome_contato` varchar(150) DEFAULT NULL,
+  `cpf` varchar(18) DEFAULT NULL,
+  `ie` varchar(40) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `cep` varchar(10) DEFAULT NULL,
+  `endereco` varchar(300) DEFAULT NULL,
+  `numero` int(15) DEFAULT NULL,
+  `complemento` varchar(300) DEFAULT NULL,
+  `bairro` varchar(300) DEFAULT NULL,
+  `uf` char(2) DEFAULT NULL,
+  `cidade` varchar(300) DEFAULT NULL,
+  `telefone` varchar(50) DEFAULT NULL,
+  `celular` varchar(15) DEFAULT NULL,
+  `fax` varchar(15) DEFAULT NULL,
+  `login` varchar(15) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL,
+  `data_acesso` datetime DEFAULT NULL,
+  `data_hora` datetime NOT NULL,
+  `termo` char(1) DEFAULT NULL,
+  `tipo` char(1) NOT NULL COMMENT 'fisica ou juridica',
+  `estado` char(1) NOT NULL,
+  `sexo` char(1) DEFAULT NULL,
+  `id_usuario_tipo` int(2) NOT NULL,
+  `id_usuario_02` int(11) DEFAULT NULL COMMENT 'Id do dono do cliente',
+  `id_pessoa` int(11) DEFAULT NULL,
+  `data_ts` varchar(14) DEFAULT NULL,
+  `uid` varchar(50) DEFAULT NULL,
+  `ativo` char(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_usuario`
+--
+
+INSERT INTO `shopp_garden_tbl_usuario` (`id`, `nome`, `sobrenome`, `nome_contato`, `cpf`, `ie`, `email`, `cep`, `endereco`, `numero`, `complemento`, `bairro`, `uf`, `cidade`, `telefone`, `celular`, `fax`, `login`, `senha`, `data_acesso`, `data_hora`, `termo`, `tipo`, `estado`, `sexo`, `id_usuario_tipo`, `id_usuario_02`, `id_pessoa`, `data_ts`, `uid`, `ativo`) VALUES
+(1, 'Alan', 'Camacho', NULL, '055.454.684-58', '', 'alain_mcf@hotmail.com', '01.415-002', 'Rua: Bela Cintra', 0, '', 'Consolação', 'SP', 'São Paulo', '(44) 4444-4444', '', '', 'admin', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2012-10-10 19:32:46', '2010-02-01 09:03:09', 's', 'f', 'a', NULL, 1, NULL, 1, NULL, NULL, NULL),
+(2, 'Carla', 'Torrico', '', '233.521.438-02', '', 'carla.torrico@hm2.com.br', '01.415-000', 'Rua: Bela Cintra', 968, '8 vo', 'Consolação', 'SP', 'São Paulo', '(11) 2769-1670', '(11) 8754-0535', '', 'cliente', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2012-07-19 17:56:25', '2012-02-16 10:56:20', 's', 'f', 'a', NULL, 2, NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_usuario_ambiente`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_usuario_ambiente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario_tipo` int(11) NOT NULL,
+  `id_ambiente` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=246 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_usuario_ambiente`
+--
+
+INSERT INTO `shopp_garden_tbl_usuario_ambiente` (`id`, `id_usuario_tipo`, `id_ambiente`) VALUES
+(245, 1, 9),
+(244, 1, 44),
+(243, 1, 5),
+(242, 1, 42),
+(241, 1, 140),
+(240, 1, 139),
+(239, 1, 138),
+(238, 1, 137),
+(237, 1, 181),
+(236, 1, 22),
+(235, 1, 11),
+(234, 1, 12),
+(233, 1, 23),
+(232, 1, 123),
+(231, 1, 1),
+(230, 1, 220),
+(229, 1, 219),
+(228, 1, 222),
+(227, 1, 36),
+(226, 1, 30),
+(225, 1, 35),
+(224, 1, 26),
+(223, 1, 29),
+(222, 1, 37),
+(221, 1, 32),
+(220, 1, 17),
+(219, 1, 28),
+(218, 1, 225),
+(217, 1, 224),
+(216, 1, 156),
+(215, 1, 155),
+(214, 1, 154),
+(213, 1, 153),
+(212, 1, 223),
+(40, 2, 209),
+(41, 2, 213),
+(42, 2, 218),
+(43, 2, 217),
+(44, 2, 28),
+(45, 2, 17),
+(46, 2, 37),
+(47, 2, 29),
+(48, 2, 26),
+(49, 2, 35),
+(50, 2, 36),
+(51, 2, 187),
+(52, 2, 188),
+(53, 2, 214),
+(54, 2, 216),
+(55, 2, 215),
+(56, 2, 1),
+(57, 2, 22),
+(58, 2, 42),
+(59, 2, 5),
+(60, 2, 9),
+(211, 1, 221),
+(210, 1, 209);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `shopp_garden_tbl_usuario_tipo`
+--
+
+CREATE TABLE IF NOT EXISTS `shopp_garden_tbl_usuario_tipo` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(35) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `shopp_garden_tbl_usuario_tipo`
+--
+
+INSERT INTO `shopp_garden_tbl_usuario_tipo` (`id`, `nome`) VALUES
+(1, 'Administrador'),
+(2, 'Cliente'),
+(3, 'Newsletter');

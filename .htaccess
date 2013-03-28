@@ -1,0 +1,21 @@
+RewriteEngine on
+
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteCond %{SCRIPT_FILENAME} !-d
+
+RewriteRule ^$ index.php [NC]
+
+#Permite ir pro Gestor de Conteudo
+RewriteRule ^(gc[\/].*?)?$ $1  [L,NC]
+
+#acao_adm/ambiente/id_materia/id_email   
+RewriteRule ^([´A-Za-z-_]+)?[\/]?([A-Za-z-0-9_&=!\?]*)?[\/]?([A-Za-z-0-9_&=!\?]*)?[\/]?$ index.php?acao_adm=$1&acao=$2&id=$3 [NC]
