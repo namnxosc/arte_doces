@@ -146,18 +146,18 @@ textarea:focus
 .corpo
 {
 	position:absolute;
-	width:1115px;
+	width:1250px;
 	min-width:1090px;
 	height:100%;
-	margin-left: -544px;
+	margin-left: -600px;
 	margin-top:20px;
 	left:50%;
 }
 
 .centro
 {
-	width:1090px;
-	min-width:1090px;
+	width:1200px;
+	min-width:1200px;
 	height:100%;
 	margin: 0 auto;
 }
@@ -343,9 +343,9 @@ textarea:focus
 	
 	font-size:14px;
 	font-style:normal;
-	background:#fff;
+	background:#353939;
 	margin: 0 14px 15px 0 !important;
-	padding:3px;
+	padding:14px;
 }
 
 .element a
@@ -365,12 +365,14 @@ textarea:focus
 
 .element  h2
 {	
-	font-family: 'colaborate-boldregular';
+	font-family: 'DINNeuzeitGroteskStdBoldCnRg';
 	display:block;
-	margin: 1px 0 0 10px; 
+	margin: 1px 0 0 0px; 
 	font-size:20px !important;
-	color:#706f52;
+	color:#a49567;
 	font-style:normal !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .element  p
@@ -381,9 +383,9 @@ textarea:focus
 	float:left;
 	width:98%;
 	margin-top:1px;
-	margin-left:10px;
+	margin-left:0px;
 	font-size:18px;
-	color:#a8a78e;
+	color:#fff;
 	font-style:normal;
 	font-weight: normal;
 }

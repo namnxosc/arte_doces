@@ -8,6 +8,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'DINNeuzeitGroteskStdBoldCnRg';
+    src: url('../../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.eot');
+    src: url('../../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.woff') format('woff'),
+         url('../../../fontes/DINNeuzeitGroteskStd-BdCond/dinneuzeitgroteskstd-bdcond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /**** #site-nav ****/
 
 #site-nav {
@@ -237,9 +248,8 @@ button {
  }
 
 .box {
-	
   
-  background: #fff;
+  background: #353939;
 
   /*line-height: 1.4em;*/
   float: left;
@@ -247,10 +257,11 @@ button {
 }
 
 .box h2 {
-  font-size: 14px;
+ /* font-size: 14px;
   font-weight: normal;
-  color:#6e6e6e;
+  color:#a49567;
   font-style: normal;
+*/
 }
 
 .box img,
@@ -268,14 +279,14 @@ button {
 }
 
 .col1 { width: 80px; }
-.col2 { width: 256px; }
-.col3 { width: 531px; }
+.col2 { width: 262px; }
+.col3 { width: 566px; }
 .col4 { width: 808px; }
 .col5 { width: 1084px; }
 
 .col1 img { max-width: 80px; }
-.col2 img { max-width: 256px; }
-.col3 img { max-width: 531px; }
+.col2 img { max-width: 262px; }
+.col3 img { max-width: 566px; }
 .col4 img { max-width: 808px; }
 .col5 img { max-width: 1084px; }
 

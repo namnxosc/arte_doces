@@ -62,7 +62,7 @@ class Monta_produto
 				{
 					$tipo_col = "col2";
 					$span = "span_inf_p";
-					$largura = 256;
+					$largura = 262;
 					$corpo = $l['corpo'];
 					$corpo_array = explode(" ", $corpo);
 					$count_palabras = count($corpo_array);
@@ -84,7 +84,7 @@ class Monta_produto
 				{
 					$tipo_col = "col3";
 					$span = "span_inf_m";
-					$largura = 531;
+					$largura = 566;
 					$corpo = $l['corpo'];
 					$corpo_array = explode(" ", $corpo);
 					$count_palabras = count($corpo_array);
@@ -249,7 +249,7 @@ class Monta_produto
 			//$resultado = $o_ajudante->mensagem(14);
 			$resultado = false;
 		}//fecha busca por produto
-		// PAGINAÇÃO PARTE 2 FIM 
+		// PAGINAï¿½ï¿½O PARTE 2 FIM 
 
 		return $resultado;
 		unset($o_produto);
@@ -372,7 +372,7 @@ class Monta_produto
 			$resultado = false;
 		}//fecha busca por produto
 
-		// PAGINAÇÃO PARTE 2 FIM 
+		// PAGINAï¿½ï¿½O PARTE 2 FIM 
 		
 		return $resultado;
 		unset($o_produto);

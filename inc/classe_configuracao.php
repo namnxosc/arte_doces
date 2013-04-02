@@ -53,7 +53,7 @@ class Configuracao
 	public function host()
 	{
 		//$configuracao["host"] = "dbmy0057.whservidor.com";
-		$configuracao["host"] = "localhost";
+		$configuracao["host"] = "192.168.1.2";
 		return $configuracao["host"];
 	}
 
@@ -109,7 +109,7 @@ class Configuracao
 
 	public function site_nome()
 	{
-		$configuracao["site_nome"] = "SHOPPING GARDEN";
+		$configuracao["site_nome"] = "ARTE DOS DOCES";
 		return $configuracao["site_nome"];
 	}
 
@@ -146,7 +146,7 @@ class Configuracao
 
 	public function site_titulo()
 	{
-		$configuracao["site_titulo"] = "Shopping Garden";
+		$configuracao["site_titulo"] = "Art Doces";
 		return $configuracao["site_titulo"];
 	}
 

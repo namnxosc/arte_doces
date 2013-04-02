@@ -794,7 +794,8 @@ clearInterval(highlighting)
 		var url_virtual = $("#url_virtual").val();
 		var uploader = new qq.FileUploader({
 			element: document.getElementById(diretorio),
-			action: url_virtual+'gc/componentes/uploads.php?album='+album,
+			//action: url_virtual+'gc/componentes/uploads.php?album='+album,
+			action: 'componentes/uploads.php?album='+album,
 			params: {},
 
 			// validation    

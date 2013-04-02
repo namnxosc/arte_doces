@@ -1,9 +1,10 @@
 <?php
 ini_set('display_errors', E_ALL);
 
-if($_SERVER['SERVER_NAME'] == "localhost")
+if($_SERVER['SERVER_NAME'] == "localhost" || $_SERVER['SERVER_NAME'] == "127.0.0.1")
 {
 	$c = $_SERVER['DOCUMENT_ROOT']."shopping_garden/";
+	$c = "/Applications/XAMPP/xamppfiles/htdocs/arte_doces/";
 	
 }
 else
@@ -11,7 +12,7 @@ else
 	//$c = "/home/shoppin/public_html/novo_site/";
 	$c = "/home/shoppin/public_html/novo_site/";
 }
-$c = "/Applications/XAMPP/xamppfiles/htdocs/arte_doces/";
+
 //****
 require_once($c."inc/classe_configuracao.php");
 require_once($c."inc/classe_conexao.php");

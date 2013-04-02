@@ -26,7 +26,7 @@ switch($_REQUEST['acao'])
 				{
 					foreach($rs as $l_imagem)
 					{
-						$file = "../imagens/produtos/".$l_imagem['nome'];//trocar o endereço
+						$file = "../imagens/produtos/".$l_imagem['nome'];//trocar o endereï¿½o
 						if(file_exists($file))
 						{
 							unlink($file); 
@@ -142,7 +142,7 @@ switch($_REQUEST['acao'])
 				}
 				
 
-				$o_auditoria->set('acao_descricao',"Inserção de uma nova materia: ".$_REQUEST["_nome"].".");
+				$o_auditoria->set('acao_descricao',"Inserï¿½ï¿½o de uma nova materia: ".$_REQUEST["_nome"].".");
 				if($o_auditoria->inserir())
 				{}else
 				{
@@ -151,7 +151,7 @@ switch($_REQUEST['acao'])
 
 				$o_album = new Album;
 				$o_album->set('estado', 'a');
-				$o_album->set('nome', 'Album da matéria '.$_REQUEST['_nome']);
+				$o_album->set('nome', 'Album da matï¿½ria '.$_REQUEST['_nome']);
 				$o_album->set('id_album_tipo', '1');
 				$o_album->set('id', $_REQUEST['_id_album']);
 				$o_album->editar();
@@ -300,14 +300,14 @@ switch($_REQUEST['acao'])
 				unset($o_produto_materia);
 			}
 
-			$o_auditoria->set('acao_descricao',"Edição da matéria: ".$_REQUEST["_nome"].".");
+			$o_auditoria->set('acao_descricao',"Ediï¿½ï¿½o da matï¿½ria: ".$_REQUEST["_nome"].".");
 			$o_auditoria->inserir();
 
 			header("Location: index.php?acao_adm=materia_adm&layout=lista&msg=1");
 		}
 		else
 		{
-			die("Erro ao tentar editar matéria");
+			die("Erro ao tentar editar matï¿½ria");
 		}
 	break;
 
@@ -428,14 +428,14 @@ switch($_REQUEST['acao'])
 				$o_categoria_produto->excluir();
 				unset($o_categoria_produto);
 
-				$o_auditoria->set('acao_descricao',"Exclusão da Matéria: ".$_REQUEST['_id'].".");
+				$o_auditoria->set('acao_descricao',"Exclusï¿½o da Matï¿½ria: ".$_REQUEST['_id'].".");
 				$o_auditoria->inserir();
 				header("Location: index.php?acao_adm=materia_adm&msg=8&layout=lista");
 			}
 		}
 		else
 		{
-			die("Erro ao tentar excluir Matéria.");
+			die("Erro ao tentar excluir Matï¿½ria.");
 		}
 	break;
 
@@ -453,11 +453,11 @@ switch($_REQUEST['layout'])
 		<strong>Nome da Materia</strong>
 		<input name="_nome" id="_nome" type="text" value="<?=$l["nome"]?>" size="50" maxlength="150" tabindex="1" onblur="javascript:valida_nome(this.value, '<?=$l['nome']?>', 'produto');">
 		<span class="requerido">*</span>
-		<?php echo $o_ajudante->ajuda("Inserir nome desejado para a Materia. Ex.: campeonatos, festas, produtos, etc. Máximo 100 caracteres.");?>
+		<?php echo $o_ajudante->ajuda("Inserir nome desejado para a Materia. Ex.: campeonatos, festas, produtos, etc. Mï¿½ximo 100 caracteres.");?>
 		<div id="div_valida"></div>
 		<hr>
 
-		<strong>Descrição</strong>
+		<strong>Descriï¿½ï¿½o</strong>
 		<textarea name="_corpo" id="_corpo"  cols="80" rows="6" tabindex="2"><?=$l["corpo"]?></textarea>
 		<br/><br/>
 		<hr>
@@ -537,7 +537,7 @@ switch($_REQUEST['layout'])
 		<?php 
 		$array = array ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",);
 		echo $o_ajudante->drop_varios($array, "_ordem", $l['ordem'], "", "", "");
-		echo $o_ajudante->ajuda("Selecione a ordem da matéria.");
+		echo $o_ajudante->ajuda("Selecione a ordem da matï¿½ria.");
 		?>
 		<hr>
 		
@@ -545,7 +545,7 @@ switch($_REQUEST['layout'])
 		
 		<strong>Imagem Interna</strong>
 		<select name="_id_album_blog" id="_id_album_blog" tabindex="3" size="1">
-		<option value="">Selecione um Álbum</option>
+		<option value="">Selecione um ï¿½lbum</option>
 		<?php
 		$o_album = new Album;
 		$o_album->set('id_album_tipo','4');
@@ -565,7 +565,7 @@ switch($_REQUEST['layout'])
 		?>
 		<hr>
 		
-		<strong>Descrição</strong>
+		<strong>Descriï¿½ï¿½o</strong>
 		<textarea name="_corpo_blog" id="_corpo_blog" tabindex="4" cols="80" rows="6">
 		</textarea>
 		<br/>
@@ -583,7 +583,7 @@ switch($_REQUEST['layout'])
 		
 		<div id="div_carrega_imagem">
 			<input type="hidden" name="_id_album" id="_id_album" value="<?=$id_album?>">
-			<strong>Imagem em destaque (visível na home)</strong><br />
+			<strong>Imagem em destaque (visï¿½vel na home)</strong><br />
 			<div id="file-uploader-demo1">
 				<noscript>
 					<input tabindex="6"  name="_arquivo" id="_arquivo" type="file">
@@ -607,8 +607,7 @@ switch($_REQUEST['layout'])
 		<strong>Largura do destaque na home</strong>
 		<input type="radio"  value="p" <?php if ($l["estilo"] == "p") echo "checked";?> name="_estilo" id="check_p" tabindex="7" > <img src="../imagens/site/img_menor.png" onclick="javasrcipt: for_radio('p');" />
 		<input type="radio"  value="m" <?php if ($l["estilo"] == "m") echo "checked";?> name="_estilo" id="check_m" tabindex="8"> <img src="../imagens/site/img_mediano.png" onclick="javasrcipt: for_radio('m');"/> 
-		<input type="radio"  value="g" <?php if ($l["estilo"] == "g") echo "checked";?> name="_estilo" id="check_g" tabindex="9"> <img src="../imagens/site/img_maior.png" onclick="javasrcipt: for_radio('g');"/> 
-		<input type="radio"  value="c" <?php if ($l["estilo"] == "c") echo "checked";?> name="_estilo" id="check_c" tabindex="10"> <img src="../imagens/site/img_completo.png" onclick="javasrcipt: for_radio('c');"/> 
+		
 		<span class="requerido">*</span>
 		<?php echo $o_ajudante->ajuda("Escolha o tamanho do box da imagem na home.");?>
 		<hr>
@@ -637,11 +636,11 @@ switch($_REQUEST['layout'])
 		<input type="radio"  value="a" <?php if ($l["estado"] == "a") echo "checked";?> name="_estado" tabindex="11"> on-line 
 		<input type="radio"  value="i" <?php if ($l["estado"] == "i") echo "checked";?> name="_estado" tabindex="12"> off-line 
 		<span class="requerido">*</span>
-		<?php echo $o_ajudante->ajuda("Escolha se esta Materia está disponível.");?>
+		<?php echo $o_ajudante->ajuda("Escolha se esta Materia estï¿½ disponï¿½vel.");?>
 		<hr>
 
 		<strong> </strong>
-		<input name="image" type="image"  onClick="return checa_campos('produto_materia');"  alt="Salvar alterações" src="../imagens/gc/btn_cadastrar.png">
+		<input name="image" type="image"  onClick="return checa_campos('produto_materia');"  alt="Salvar alteraï¿½ï¿½es" src="../imagens/gc/btn_cadastrar.png">
 		<?php
 		if($acao != "inserido")
 		{
@@ -665,7 +664,7 @@ switch($_REQUEST['layout'])
 			<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
 				<thead>
 					<tr>
-						<th><b>MATÉRIA</b></th>
+						<th><b>MATï¿½RIA</b></th>
 						<th><b>CATEGORIA</b></th>
 						<th><b>IMAGEM</b></th>
 						<th><b>ORDEM</b></th>
@@ -677,7 +676,7 @@ switch($_REQUEST['layout'])
 				</thead>
 				<tfoot>
 					<tr>
-						<th><b>MATÉRIA</b></th>
+						<th><b>MATï¿½RIA</b></th>
 						<th><b>CATEGORIA</b></th>
 						<th><b>IMAGEM</b></th>
 						
@@ -707,7 +706,7 @@ switch($_REQUEST['layout'])
 							$imagem = $o_ilustra->galeria();
 
 							if($l["estado"] == "i"){$l["estado"] = "off-line";}else{$l["estado"] = "on-line";}
-							if($l["na_home"] == "s"){$l["na_home"] = "sim";}else{$l["na_home"] = "não";}
+							if($l["na_home"] == "s"){$l["na_home"] = "sim";}else{$l["na_home"] = "nï¿½o";}
 							
 							echo "<tr>";
 							echo "<td>".$l['nome']."</td>";
