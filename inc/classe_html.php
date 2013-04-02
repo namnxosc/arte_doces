@@ -34,7 +34,7 @@ class Html
 		$template = $o_template->template_resultado();
 		
 		//$l = getimagesize("".$url_virtual."imagens/site/logo.png");
-		$logo =  "<a href=\"".$url_virtual."\"><img width=\"282\" height=\"84\" src=\"".$url_virtual."imagens/site/logo.png\" title=\"Logo ".$o_configuracao->site_titulo()."\" alt=\"Logo ".$o_configuracao->site_titulo()."\"></a>";
+		$logo =  "<a href=\"".$url_virtual."\"><img width=\"239\" height=\"122\" src=\"".$url_virtual."imagens/site/logo.png\" title=\"Logo ".$o_configuracao->site_titulo()."\" alt=\"Logo ".$o_configuracao->site_titulo()."\"></a>";
 		
 		//Monta o Menu Direito
 			$o_menu = new Menu;

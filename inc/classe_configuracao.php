@@ -53,7 +53,7 @@ class Configuracao
 	public function host()
 	{
 		//$configuracao["host"] = "dbmy0057.whservidor.com";
-		$configuracao["host"] = "localhost";
+		$configuracao["host"] = "192.168.1.2";
 		return $configuracao["host"];
 	}
 
